@@ -1,0 +1,379 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="testModel01.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%: Page.Title %> - KS</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link href="../Content/FrontEndCSS/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/responsive.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/animate.css" rel="stylesheet" type="text/css" media="screen" />
+    <!-- Picts CSS -->
+    <link href="../Content/FrontEndPicsCSS/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../Content/FrontEndPicsCSS/touchTouch.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <!-- Color CSS -->
+    <link href="../Content/FrontEndCSS/colors/beige.css" rel="stylesheet" title="beige" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/colors/blue.css" rel="stylesheet" title="blue" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/colors/cyan.css" rel="stylesheet" title="cyan" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/colors/green.css" rel="stylesheet" title="green" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/colors/jade.css" rel="stylesheet" title="jade" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/colors/orange.css" rel="stylesheet" title="orange" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/colors/peach.css" rel="stylesheet" title="peach" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/colors/pink.css" rel="stylesheet" title="pink" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/colors/purple.css" rel="stylesheet" title="purple" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/colors/red.css" rel="stylesheet" title="red" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/colors/sky-blue.css" rel="stylesheet" title="sky-blue" type="text/css" media="screen" />
+    <link href="../Content/FrontEndCSS/colors/yellow.css" rel="stylesheet" title="yellow" type="text/css" media="screen" />
+
+</head>
+<body>
+
+    <div id="container">
+
+        <div class="hidden-header"></div>
+        <header class="clearfix">
+            <div class="navbar navbar-default navbar-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="Main.aspx">
+                            <h5 style="margin-top: -15px">
+                                <img alt="" src="../BackEndImg/ks.png" style="max-height: 50px">
+                                <span>康欣老人長期照顧中心【養護型】</span>
+                            </h5>
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <div class="search-side">
+                            <a href="#" class="show-search"><i class="fa fa-search"></i></a>
+                            <div class="search-form">
+                                <form autocomplete="off" role="search" method="get" class="searchform" action="#">
+                                    <input type="text" value="" name="s" id="s" placeholder="Search the site...">
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a class="" href="Main.aspx">首頁</a>
+                            </li>
+                            <%--<li>
+                                <a href="#"></a>
+                                <ul class="dropdown">
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>--%>
+                            <li>
+                                <a href="關於康欣.aspx">關於康欣</a>
+                            </li>
+                            <li>
+                                <a href="活動剪影.aspx">康欣剪影</a>
+                            </li>
+                            <li>
+                                <a href="#">收費標準</a>
+                                <ul class="dropdown">
+                                    <li><a href="收費標準.aspx#收費標準表">收費標準表</a></li>
+                                    <li><a href="收費標準.aspx#入住注意事項">入住注意事項</a></li>
+                                    <li><a href="收費標準.aspx#日常照護收費評估表">日常照護收費評估表</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="聯絡我們.aspx">聯絡我們</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+
+        <div id="content">
+            <div class="container">
+
+                <asp:ContentPlaceHolder ID="BodyContent" runat="server">
+                </asp:ContentPlaceHolder>
+
+                <div class="hr5" style="margin-top: 55px; margin-bottom: 55px;"></div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="big-title">
+                            <h1>網站資源 <span class="accent-color">連結</span></h1>
+                            <p class="title-desc">提供有關老人長期照顧的相關資訊</p>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="our-clients">
+                            <div id="connect" runat="server">
+                                <div class="clients-carousel custom-carousel touch-carousel navigation-2" data-appeared-items="4" data-navigation="true">
+                                    <asp:Literal ID="ltlConnect" runat="server"></asp:Literal>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="container">
+                <div class="row footer-widgets">
+                    <div class="col-md-3 row" style="width: 100%">
+                        <div class="col-md-6" style="width: auto; margin-top: -20px">
+                            <p>
+                                <img src="../BackEndImg/ks.png" style="max-height: 50px" />
+                            </p>
+                        </div>
+                        <div class="col-md-6" style="width: auto">
+                            <p><span>電話 :</span> (07)614-1273 ‧ 614-0367</p>
+                        </div>
+                        <div class="col-md-6" style="width: auto">
+                            <p><span>傳真 :</span> (07)614-0136</p>
+                        </div>
+                        <div class="col-md-6" style="width: auto">
+                            <p><span>網站 :</span> http://www.ksyy.com.tw</p>
+                        </div>
+                        <div class="col-md-6" style="width: auto">
+                            <p><span>地址 :</span> 高雄市燕巢區安招里安東街188號</p>
+                        </div>
+                        <div class="col-md-6" style="width: auto">
+                            <p><span>E-mail :</span> t18428603@yahoo.com.tw</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-section">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; 2014 KS -  All Rights Reserved</p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="footer-nav">
+                                <li><a href="../Login.aspx">BackEnd</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <div id="loader">
+        <div class="spinner">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+        </div>
+    </div>
+
+    <div class="switcher-box">
+        <a href="#" class="open-switcher show-switcher"><i class="fa fa-cog fa-2x"></i></a>
+        <h4>樣式選擇</h4>
+        <span>顏色切換</span>
+        <ul class="colors-list">
+            <li><a onclick="setActiveStyleSheet('blue'); return false;" title="Blue" class="blue"></a></li>
+            <li><a onclick="setActiveStyleSheet('sky-blue'); return false;" title="Sky Blue" class="sky-blue"></a></li>
+            <li><a onclick="setActiveStyleSheet('cyan'); return false;" title="Cyan" class="cyan"></a></li>
+            <li><a onclick="setActiveStyleSheet('jade'); return false;" title="Jade" class="jade"></a></li>
+            <li><a onclick="setActiveStyleSheet('green'); return false;" title="Green" class="green"></a></li>
+            <li><a onclick="setActiveStyleSheet('purple'); return false;" title="Purple" class="purple"></a></li>
+            <li><a onclick="setActiveStyleSheet('pink'); return false;" title="Pink" class="pink"></a></li>
+            <li><a onclick="setActiveStyleSheet('red'); return false;" title="Red" class="red"></a></li>
+            <li><a onclick="setActiveStyleSheet('orange'); return false;" title="Orange" class="orange"></a></li>
+            <li><a onclick="setActiveStyleSheet('yellow'); return false;" title="Yellow" class="yellow"></a></li>
+            <li><a onclick="setActiveStyleSheet('peach'); return false;" title="Peach" class="peach"></a></li>
+            <li><a onclick="setActiveStyleSheet('beige'); return false;" title="Biege" class="beige"></a></li>
+        </ul>
+        <%--<span>Top Bar Color</span>
+        <select id="topbar-style" class="topbar-style">
+            <option value="1">Light (Default)</option>
+            <option value="2">Dark</option>
+            <option value="3">Color</option>
+        </select>--%>
+        <span>預覽模式</span>
+        <select id="layout-style" class="layout-style">
+            <option value="1">模式1</option>
+            <option value="2">模式2</option>
+        </select>
+        <span>邊緣樣式</span>
+        <ul class="bg-list">
+            <li><a href="#" class="bg1"></a></li>
+            <li><a href="#" class="bg2"></a></li>
+            <li><a href="#" class="bg3"></a></li>
+            <li><a href="#" class="bg4"></a></li>
+            <li><a href="#" class="bg5"></a></li>
+            <li><a href="#" class="bg6"></a></li>
+            <li><a href="#" class="bg7"></a></li>
+            <li><a href="#" class="bg8"></a></li>
+            <li><a href="#" class="bg9"></a></li>
+            <li><a href="#" class="bg10"></a></li>
+            <li><a href="#" class="bg11"></a></li>
+            <li><a href="#" class="bg12"></a></li>
+            <li><a href="#" class="bg13"></a></li>
+            <li><a href="#" class="bg14"></a></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery-2.1.1.min.js"></script>
+    <!-- Picts JS -->
+    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/superfish.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.mobilemenu.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.equalheights.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/touchTouch.jquery.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.isotope.min.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            var $containerpics = $('#containerpics');
+            //Run to initialise column sizes
+            updateSize();
+
+            //Load masonry when images all loaded
+            $containerpics.imagesLoaded(function () {
+
+                $containerpics.isotope({
+                    // options
+                    itemSelector: '.element',
+                    layoutMode: 'masonry',
+                    transformsEnabled: true,
+                    columnWidth: function (containerpicsWidth) {
+                        containerpicsWidth = $browserWidth;
+                        return Math.floor(containerpicsWidth / $cols);
+                    }
+                });
+            });
+
+            // update columnWidth on window resize
+            $(window).smartresize(function () {
+                updateSize();
+                $containerpics.isotope('reLayout');
+            });
+
+            //Set item size
+            function updateSize() {
+                $browserWidth = $containerpics.width();
+                $cols = 4;
+
+                if ($browserWidth >= 1170) {
+                    $cols = 4;
+                }
+                else if ($browserWidth >= 800 && $browserWidth < 1170) {
+                    $cols = 3;
+                }
+                else if ($browserWidth >= 480 && $browserWidth < 800) {
+                    $cols = 2;
+                }
+                else if ($browserWidth >= 320 && $browserWidth < 480) {
+                    $cols = 1;
+                }
+                else if ($browserWidth < 401) {
+                    $cols = 1;
+                }
+                //console.log("Browser width is:" + $browserWidth);
+                //console.log("Cols is:" + $cols);
+
+                // $gutterTotal = $cols * 20;
+                $browserWidth = $browserWidth; // - $gutterTotal;
+                $itemWidth = $browserWidth / $cols;
+                $itemWidth = Math.floor($itemWidth);
+
+                $(".element").each(function (index) {
+                    $(this).css({ "width": $itemWidth + "px" });
+                });
+
+
+
+                var $optionSets = $('#options .option-set'),
+                    $optionLinks = $optionSets.find('a');
+
+                $optionLinks.click(function () {
+                    var $this = $(this);
+                    // don't proceed if already selected
+                    if ($this.hasClass('selected')) {
+                        return false;
+                    }
+                    var $optionSet = $this.parents('.option-set');
+                    $optionSet.find('.selected').removeClass('selected');
+                    $this.addClass('selected');
+
+                    // make option object dynamically, i.e. { filter: '.my-filter-class' }
+                    var options = {},
+                        key = $optionSet.attr('data-option-key'),
+                        value = $this.attr('data-option-value');
+                    // parse 'false' as false boolean
+                    value = value === 'false' ? false : value;
+                    options[key] = value;
+                    if (key === 'layoutMode' && typeof changeLayoutMode === 'function') {
+                        // changes in layout modes need extra logic
+                        changeLayoutMode($this, options)
+                    } else {
+                        // otherwise, apply new options
+                        $containerpics.isotope(options);
+                    }
+
+                    return false;
+                });
+
+            };
+
+            // Initialize the gallery
+            $('.thumb').touchTouch();
+
+        });
+    </script>
+    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/tm-scripts.js"></script>
+    <!-- JS -->
+    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.migrate.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/modernizrr.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/nivo-lightbox.min.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.appear.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/count-to.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.textillate.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.lettering.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.parallax.js"></script>
+    <script type="text/javascript" src="../Scripts/FrontEndJS/script.js"></script>
+
+    <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <div style='text-align:center'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>  
+    <link rel="stylesheet" href="assets/tm/css/tm_docs.css" type="text/css" media="screen">
+    <script src="../Scripts/FrontEndPicsJS/html5shiv.js"></script>
+    <script src="../Scripts/FrontEndPicsJS/respond.min.js"></script>
+    <![endif]-->
+</body>
+</html>
