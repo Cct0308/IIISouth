@@ -1,0 +1,9 @@
+C:\ASPNET\code\Beverage POS dll for Web (Simple)\Beverage POS dll for Web (Simple)\bin\Debug\Beverage POS dll for Web (Simple).dll
+C:\ASPNET\code\Beverage POS dll for Web (Simple)\Beverage POS dll for Web (Simple)\bin\Debug\Beverage POS dll for Web (Simple).pdb
+C:\ASPNET\code\Beverage POS dll for Web (Simple)\Beverage POS dll for Web (Simple)\obj\Debug\Beverage POS dll for Web (Simple).csprojResolveAssemblyReference.cache
+C:\ASPNET\code\Beverage POS dll for Web (Simple)\Beverage POS dll for Web (Simple)\obj\Debug\Beverage POS dll for Web (Simple).dll
+C:\ASPNET\code\Beverage POS dll for Web (Simple)\Beverage POS dll for Web (Simple)\obj\Debug\Beverage POS dll for Web (Simple).pdb
+C:\Users\Cct\Desktop\HW\Beverage POS dll for Web (Simple)\Beverage POS dll for Web (Simple)\bin\Debug\Beverage POS dll for Web (Simple).dll
+C:\Users\Cct\Desktop\HW\Beverage POS dll for Web (Simple)\Beverage POS dll for Web (Simple)\bin\Debug\Beverage POS dll for Web (Simple).pdb
+C:\Users\Cct\Desktop\HW\Beverage POS dll for Web (Simple)\Beverage POS dll for Web (Simple)\obj\Debug\Beverage POS dll for Web (Simple).dll
+C:\Users\Cct\Desktop\HW\Beverage POS dll for Web (Simple)\Beverage POS dll for Web (Simple)\obj\Debug\Beverage POS dll for Web (Simple).pdb

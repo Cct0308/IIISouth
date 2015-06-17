@@ -1,0 +1,23 @@
+C:\C#進階\code\Beverage POS (Simple)\Beverage POS (Simple)\bin\Debug\Beverage POS (Simple).exe.config
+C:\Users\iii\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\bin\Debug\Beverage POS (Simple).exe.config
+C:\Users\iii\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\bin\Debug\Beverage POS (Simple).exe
+C:\Users\iii\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\bin\Debug\Beverage POS (Simple).pdb
+C:\Users\iii\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage POS (Simple).csprojResolveAssemblyReference.cache
+C:\Users\iii\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage_POS__Simple_.Form1.resources
+C:\Users\iii\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage_POS__Simple_.Properties.Resources.resources
+C:\Users\iii\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage POS (Simple).csproj.GenerateResource.Cache
+C:\Users\iii\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage POS (Simple).exe
+C:\Users\iii\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage POS (Simple).pdb
+C:\Users\Cct\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\bin\Debug\Beverage POS (Simple).exe.config
+C:\Users\Cct\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage POS (Simple).exe
+C:\Users\Cct\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage POS (Simple).pdb
+C:\Users\Cct\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\bin\Debug\Beverage POS (Simple).exe
+C:\Users\Cct\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\bin\Debug\Beverage POS (Simple).pdb
+C:\Users\Cct\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage POS (Simple).csprojResolveAssemblyReference.cache
+C:\Users\Cct\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage_POS__Simple_.Form1.resources
+C:\Users\Cct\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage_POS__Simple_.Properties.Resources.resources
+C:\Users\Cct\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage POS (Simple).csproj.GenerateResource.Cache
+C:\Users\iii\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage_POS__Simple_.Login.resources
+C:\Users\iii\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage_POS__Simple_.Main.resources
+C:\Users\Cct\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage_POS__Simple_.Login.resources
+C:\Users\Cct\Desktop\Beverage POS (Simple)\Beverage POS (Simple)\obj\Debug\Beverage_POS__Simple_.Main.resources

@@ -1,0 +1,4 @@
+C:\ASPNET\code\slnCustomerLib\slnCustomerLib\bin\Debug\slnCustomerLib.dll
+C:\ASPNET\code\slnCustomerLib\slnCustomerLib\bin\Debug\slnCustomerLib.pdb
+C:\ASPNET\code\slnCustomerLib\slnCustomerLib\obj\Debug\slnCustomerLib.dll
+C:\ASPNET\code\slnCustomerLib\slnCustomerLib\obj\Debug\slnCustomerLib.pdb
