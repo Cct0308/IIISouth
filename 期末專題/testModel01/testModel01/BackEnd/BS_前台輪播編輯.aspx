@@ -41,20 +41,43 @@
             <Columns>
                 <asp:BoundField DataField="fId" HeaderText="fId" SortExpression="fId" InsertVisible="False" ReadOnly="True" Visible="false"></asp:BoundField>
                 <asp:BoundField DataField="fPic" HeaderText="fPic" SortExpression="fPic" Visible="false"></asp:BoundField>
+                <asp:TemplateField HeaderText="抬頭" SortExpression="fFirst">
+                    <EditItemTemplate>
+                        <asp:TextBox runat="server" Text='<%# Bind("fFirst") %>' ID="TextBox1" Width="100%"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label runat="server" Text='<%# Bind("fFirst") %>' ID="Label1"></asp:Label>
+                    </ItemTemplate>
 
+                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large"></HeaderStyle>
 
-                <asp:BoundField DataField="fFirst" HeaderText="抬頭" SortExpression="fFirst">
-                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
-                    <ItemStyle CssClass="text-left" Font-Size="Medium" />
-                </asp:BoundField>
-                <asp:BoundField DataField="fSecond" HeaderText="標題" SortExpression="fSecond">
-                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
-                    <ItemStyle CssClass="text-left" Font-Size="Medium" />
-                </asp:BoundField>
-                <asp:BoundField DataField="fThird" HeaderText="副標題" SortExpression="fThird">
-                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
-                    <ItemStyle CssClass="text-left" Font-Size="Medium" />
-                </asp:BoundField>
+                    <ItemStyle CssClass="text-left" Font-Size="Medium"></ItemStyle>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="標題" SortExpression="fSecond">
+                    <EditItemTemplate>
+                        <asp:TextBox runat="server" Text='<%# Bind("fSecond") %>' ID="TextBox2" Width="100%"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label runat="server" Text='<%# Bind("fSecond") %>' ID="Label2"></asp:Label>
+                    </ItemTemplate>
+
+                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large"></HeaderStyle>
+
+                    <ItemStyle CssClass="text-left" Font-Size="Medium"></ItemStyle>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="副標題" SortExpression="fThird">
+                    <EditItemTemplate>
+                        <asp:TextBox runat="server" Text='<%# Bind("fThird") %>' ID="TextBox3" Width="100%"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label runat="server" Text='<%# Bind("fThird") %>' ID="Label3"></asp:Label>
+                    </ItemTemplate>
+
+                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large"></HeaderStyle>
+
+                    <ItemStyle CssClass="text-left" Font-Size="Medium"></ItemStyle>
+                </asp:TemplateField>
+
 
                 <asp:TemplateField ShowHeader="False" >
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
@@ -105,18 +128,36 @@
                 <asp:BoundField DataField="fPic" HeaderText="fPic" SortExpression="fPic" Visible="false"></asp:BoundField>
 
 
-                <asp:BoundField DataField="fFirst" HeaderText="抬頭" SortExpression="fFirst">
+                <asp:TemplateField HeaderText="抬頭" SortExpression="fFirst">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("fFirst") %>' Width="100%"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("fFirst") %>'></asp:Label>
+                    </ItemTemplate>
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
                     <ItemStyle CssClass="text-left" Font-Size="Medium" />
-                </asp:BoundField>
-                <asp:BoundField DataField="fSecond" HeaderText="標題" SortExpression="fSecond">
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="標題" SortExpression="fSecond">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("fSecond") %>' Width="100%"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label2" runat="server" Text='<%# Bind("fSecond") %>'></asp:Label>
+                    </ItemTemplate>
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
                     <ItemStyle CssClass="text-left" Font-Size="Medium" />
-                </asp:BoundField>
-                <asp:BoundField DataField="fThird" HeaderText="副標題" SortExpression="fThird">
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="副標題" SortExpression="fThird">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("fThird") %>' Width="100%"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label3" runat="server" Text='<%# Bind("fThird") %>'></asp:Label>
+                    </ItemTemplate>
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
                     <ItemStyle CssClass="text-left" Font-Size="Medium" />
-                </asp:BoundField>
+                </asp:TemplateField>
 
                 <asp:TemplateField ShowHeader="False" >
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
@@ -168,18 +209,36 @@
                 <asp:BoundField DataField="fPic" HeaderText="fPic" SortExpression="fPic" Visible="false"></asp:BoundField>
 
 
-                <asp:BoundField DataField="fFirst" HeaderText="抬頭" SortExpression="fFirst">
+                <asp:TemplateField HeaderText="抬頭" SortExpression="fFirst">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("fFirst") %>' Width="100%"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("fFirst") %>'></asp:Label>
+                    </ItemTemplate>
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
                     <ItemStyle CssClass="text-left" Font-Size="Medium" />
-                </asp:BoundField>
-                <asp:BoundField DataField="fSecond" HeaderText="標題" SortExpression="fSecond">
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="標題" SortExpression="fSecond">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("fSecond") %>' Width="100%"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label2" runat="server" Text='<%# Bind("fSecond") %>'></asp:Label>
+                    </ItemTemplate>
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
                     <ItemStyle CssClass="text-left" Font-Size="Medium" />
-                </asp:BoundField>
-                <asp:BoundField DataField="fThird" HeaderText="副標題" SortExpression="fThird">
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="副標題" SortExpression="fThird">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("fThird") %>' Width="100%"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label3" runat="server" Text='<%# Bind("fThird") %>'></asp:Label>
+                    </ItemTemplate>
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
                     <ItemStyle CssClass="text-left" Font-Size="Medium" />
-                </asp:BoundField>
+                </asp:TemplateField>
 
                 <asp:TemplateField ShowHeader="False" >
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />

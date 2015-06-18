@@ -37,6 +37,16 @@
             height:200px;
         }
 
+        .auto-style19 {
+            text-align: left;
+            width: 8%;
+            height: 56px;
+        }
+        .auto-style20 {
+            width: 17%;
+            height: 56px;
+        }
+
     </style>
 
     <script src="../Scripts/jquery-1.9.1.js"></script>
@@ -53,9 +63,9 @@
                 ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>'
                 SelectCommand="SELECT * FROM [T床位系統] WHERE ([f床號] = @f床號)"
                 OldValuesParameterFormatString="original_{0}"
-                DeleteCommand="UPDATE [T床位系統] SET  [f入住日期] =NULL, [f姓名] = NULL, [f身份證字號] = NULL, [f生日] = NULL, [f住址] = NULL, [f家電] = NULL, [f聯絡人] = NULL, [f聯絡人家電] = NULL, [f聯絡人手機] = NULL, [f指定醫院] = NULL, [f是否住院中] = 0, [f鼻胃管] = NULL, [f導尿管] = NULL, [f其他管路] = NULL, [f耗材] = NULL, [f其他] = NULL, [f備註] = NULL, [f大頭照] = NULL ,f宗教=NULL where [f床號] = @original_f床號"
-                InsertCommand="INSERT INTO [T床位系統] ([f床號], [f入住日期], [f姓名], [f身份證字號], [f生日], [f住址], [f家電], [f聯絡人], [f聯絡人家電], [f聯絡人手機], [f指定醫院], [f是否住院中], [f鼻胃管], [f導尿管], [f其他管路], [f耗材], [f其他], [f備註], [f大頭照], [f宗教]) VALUES (@f床號, @f入住日期, @f姓名, @f身份證字號, @f生日, @f住址, @f家電, @f聯絡人, @f聯絡人家電, @f聯絡人手機, @f指定醫院, @f是否住院中, @f鼻胃管, @f導尿管, @f其他管路, @f耗材, @f其他, @f備註, @f大頭照, @f宗教)"
-                UpdateCommand="UPDATE [T床位系統] SET [f入住日期] = @f入住日期, [f姓名] = @f姓名, [f身份證字號] = @f身份證字號, [f生日] = @f生日, [f住址] = @f住址, [f家電] = @f家電, [f聯絡人] = @f聯絡人, [f聯絡人家電] = @f聯絡人家電, [f聯絡人手機] = @f聯絡人手機, [f指定醫院] = @f指定醫院, [f是否住院中] = @f是否住院中, [f鼻胃管] = @f鼻胃管, [f導尿管] = @f導尿管, [f其他管路] = @f其他管路, [f耗材] = @f耗材, [f其他] = @f其他, [f備註] = @f備註, [f大頭照] = @f大頭照, [f宗教] = @f宗教 WHERE [f床號] = @original_f床號">
+                DeleteCommand="UPDATE [T床位系統] SET  [f入住日期] =NULL, [f姓名] = NULL, [f身份證字號] = NULL, [f生日] = NULL, [f住址] = NULL, [f家電] = NULL, [f聯絡人] = NULL, [f聯絡人家電] = NULL, [f聯絡人手機] = NULL, [f指定醫院] = NULL, [f是否住院中] = 0, [f鼻胃管] = 0, [f導尿管] = 0, [f其他管路] = NULL, [f耗材] = NULL, [f其他] = NULL, [f備註] = NULL, [f照片] = NULL ,f宗教=NULL where [f床號] = @original_f床號"
+                InsertCommand="INSERT INTO [T床位系統] ([f床號], [f入住日期], [f姓名], [f身份證字號], [f生日], [f住址], [f家電], [f聯絡人], [f聯絡人家電], [f聯絡人手機], [f指定醫院], [f是否住院中], [f鼻胃管], [f導尿管], [f其他管路], [f耗材], [f其他], [f備註], [f照片], [f宗教]) VALUES (@f床號, @f入住日期, @f姓名, @f身份證字號, @f生日, @f住址, @f家電, @f聯絡人, @f聯絡人家電, @f聯絡人手機, @f指定醫院, @f是否住院中, @f鼻胃管, @f導尿管, @f其他管路, @f耗材, @f其他, @f備註, @f照片, @f宗教)"
+                UpdateCommand="UPDATE [T床位系統] SET [f入住日期] = @f入住日期, [f姓名] = @f姓名, [f身份證字號] = @f身份證字號, [f生日] = @f生日, [f住址] = @f住址, [f家電] = @f家電, [f聯絡人] = @f聯絡人, [f聯絡人家電] = @f聯絡人家電, [f聯絡人手機] = @f聯絡人手機, [f指定醫院] = @f指定醫院, [f是否住院中] = @f是否住院中, [f鼻胃管] = @f鼻胃管, [f導尿管] = @f導尿管, [f其他管路] = @f其他管路, [f耗材] = @f耗材, [f其他] = @f其他, [f備註] = @f備註, [f照片] = @f照片, [f宗教] = @f宗教 WHERE [f床號] = @original_f床號">
                 <DeleteParameters>
                     <asp:Parameter Name="original_f床號" Type="String"></asp:Parameter>
                 </DeleteParameters>
@@ -78,7 +88,7 @@
                     <asp:Parameter Name="f耗材" Type="String"></asp:Parameter>
                     <asp:Parameter Name="f其他" Type="String"></asp:Parameter>
                     <asp:Parameter Name="f備註" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f大頭照" Type="String"></asp:Parameter>
+                    <asp:Parameter Name="f照片" Type="String"></asp:Parameter>
                     <asp:Parameter Name="f宗教" Type="String"></asp:Parameter>
                 </InsertParameters>
                 <SelectParameters>
@@ -103,7 +113,7 @@
                     <asp:Parameter Name="f耗材" Type="String"></asp:Parameter>
                     <asp:Parameter Name="f其他" Type="String"></asp:Parameter>
                     <asp:Parameter Name="f備註" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f大頭照" Type="String"></asp:Parameter>
+                    <asp:Parameter Name="f照片" Type="String"></asp:Parameter>
                     <asp:Parameter Name="f宗教" Type="String"></asp:Parameter>
                     <asp:Parameter Name="original_f床號" Type="String"></asp:Parameter>
                 </UpdateParameters>
@@ -144,7 +154,9 @@
                                     <td class="auto-style15">
                                         <asp:TextBox ID="f身份證字號TextBox" runat="server" Text='<%# Bind("f身份證字號") %>' CssClass="mytbox " />
                                     </td>
-                                    <td class="auto-style17">&nbsp;</td>
+                                    <td class="auto-style17">
+                                        <asp:Button ID="btn_delpic" class=" btn-primary btn" runat="server" OnClick="btn_delpic_Click1" Text="刪除相片" OnClientClick="if (confirm('確定要刪除嗎？  圖片檔將被刪除。')==false) {return false;}" />
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="auto-style17">住址: </td>
@@ -206,11 +218,17 @@
                                 <tr>
                                     <td class="auto-style17">導尿管: </td>
                                     <td class="auto-style15">
-                                        <asp:TextBox ID="f導尿管TextBox" runat="server" CssClass="mytbox " Text='<%# Bind("f導尿管") %>' />
-                                    </td>
+                                     <asp:DropDownList ID="DDList_pee" runat="server" CssClass="mytbox">
+                                            <asp:ListItem>否</asp:ListItem>
+                                            <asp:ListItem>是</asp:ListItem> 
+                                            </asp:DropDownList>                                  
+                                          </td>
                                     <td class="auto-style17">鼻胃管: </td>
-                                    <td class="auto-style15">
-                                        <asp:TextBox ID="f鼻胃管TextBox" runat="server" Text='<%# Bind("f鼻胃管") %>' CssClass="mytbox " />
+                                    <td class="auto-style15">                                       
+                                        <asp:DropDownList ID="DDList_nose" runat="server" CssClass="mytbox">
+                                            <asp:ListItem>否</asp:ListItem>
+                                            <asp:ListItem>是</asp:ListItem> 
+                                            </asp:DropDownList> 
                                     </td>
                                 </tr>
                                 <tr>
@@ -226,12 +244,12 @@
                                        </td>
                                 </tr>
                                 <tr>
-                                    <td class="auto-style17">其他管路: </td>
-                                    <td class="auto-style15">
+                                    <td class="auto-style19">其他管路: </td>
+                                    <td class="auto-style20">
                                         <asp:TextBox ID="f其他管路TextBox" runat="server" CssClass="mytbox " Text='<%# Bind("f其他管路") %>' />
                                     </td>
-                                    <td class="auto-style17">其他: </td>
-                                    <td class="auto-style15">
+                                    <td class="auto-style19">其他: </td>
+                                    <td class="auto-style20">
                                         <asp:TextBox ID="f其他TextBox" runat="server" Text='<%# Bind("f其他") %>' CssClass="mytbox " />
                                     </td>
                                 </tr>

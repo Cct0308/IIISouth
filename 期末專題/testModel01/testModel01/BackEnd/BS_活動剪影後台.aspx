@@ -79,21 +79,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
 
-  <!-- Button trigger modal -->
-
-<!-- Modal -->  
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
-         aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-content" style="width:70%">
-        </div>
-    </div>
 
 
 
         <h1 style="text-align: center">相簿編輯</h1>
 
     <br />
-    缺: 0.彈窗 1. 排序編輯  2.敘述位置與編輯 3. div的排版 4.相簿名稱與編輯 5.相簿的新增與刪除
     <br />
     <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>
@@ -123,8 +114,7 @@
                             Text='<%# Eval("f庭院照片_s")  %>'/>
                     </div>
                     <div  style="text-align:center"  >
-        <a  href="BS_床位編輯.aspx?f床號=101"
-                         data-toggle="modal"   data-target="#myModal" >
+        <a  href="BS_床位編輯.aspx?f床號=101">
                         <img src='<%# Eval("f庭院照片_s") %>'  class="myimag_1"  />
                     </a>
 
@@ -142,9 +132,7 @@
                     <asp:CheckBox ID="CheckBox2" runat="server" Text='<%# Eval("f內部照片_s")  %>' />
                 </div>
                 <div align="center">
-                    <a href='<%# Eval("f內部照片_s") %>'
-                        data-lightbox='<%# Eval("f內部照片_l") %>'
-                        data-title='<%# Eval("f內部照片_l") %>'>
+                    <a href='<%# Eval("f內部照片_s") %>'>
                         <img src='<%# Eval("f內部照片_s") %>' class="myimag_1"  />
                     </a>
                 </div>
@@ -161,9 +149,7 @@
                     <asp:CheckBox ID="CheckBox2" runat="server" Text='<%# Eval("f慶生照片_s")  %>' />
                 </div>
                 <div align="center">
-                    <a href='<%# Eval("f慶生照片_s") %>'
-                        data-lightbox='<%# Eval("f慶生照片_l") %>'
-                        data-title='<%# Eval("f慶生照片_l") %>'>
+                    <a href='<%# Eval("f慶生照片_s") %>'>
                         <img src='<%# Eval("f慶生照片_s") %>' class="myimag_1"  />
                     </a>
                 </div>
@@ -179,9 +165,7 @@
                     <asp:CheckBox ID="CheckBox2" runat="server" Text='<%# Eval("f泡腳照片_s")  %>' />
                 </div>
                 <div align="center">
-                    <a href='<%# Eval("f泡腳照片_s") %>'
-                        data-lightbox='<%# Eval("f泡腳照片_l") %>'
-                        data-title='<%# Eval("f泡腳照片_l") %>'>
+                    <a href='<%# Eval("f泡腳照片_s") %>'>
                         <img src='<%# Eval("f泡腳照片_s") %>' class="myimag_1"  />
                     </a>
                 </div>
@@ -197,9 +181,7 @@
                     <asp:CheckBox ID="CheckBox2" runat="server" Text='<%# Eval("f內部照片_s")  %>' />
                 </div>
                 <div align="center">
-                    <a href='<%# Eval("f內部照片_s") %>'
-                        data-lightbox='<%# Eval("f內部照片_l") %>'
-                        data-title='<%# Eval("f內部照片_l") %>'>
+                    <a href='<%# Eval("f內部照片_s") %>'>
                         <img src='<%# Eval("f內部照片_s") %>' class="myimag_1"  />
                     </a>
                 </div>
@@ -215,9 +197,7 @@
                     <asp:CheckBox ID="CheckBox2" runat="server" Text='<%# Eval("f復健照片_s")  %>' />
                 </div>
                 <div align="center">
-                    <a href='<%# Eval("f復健照片_s") %>'
-                        data-lightbox='<%# Eval("f復健照片_l") %>'
-                        data-title='<%# Eval("f復健照片_l") %>'>
+                    <a href='<%# Eval("f復健照片_s") %>'>
                         <img src='<%# Eval("f復健照片_s") %>' class="myimag_1"  />
                     </a>
                 </div>
@@ -233,9 +213,7 @@
                     <asp:CheckBox ID="CheckBox2" runat="server" Text='<%# Eval("f義剪照片_s")  %>' />
                 </div>
                 <div align="center">
-                    <a href='<%# Eval("f義剪照片_s") %>'
-                        data-lightbox='<%# Eval("f義剪照片_l") %>'
-                        data-title='<%# Eval("f義剪照片_l") %>'>
+                    <a href='<%# Eval("f義剪照片_s") %>'>
                         <img src='<%# Eval("f義剪照片_s") %>' class="myimag_1"  />
                     </a>
                 </div>

@@ -11,7 +11,17 @@ namespace testModel01
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["login"]==null || (Session["login"].ToString() != "已登入"))
+                {
+                    Response.Redirect(@"..\Login.aspx");
+                }
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Session["login"] = null;
+            Response.Redirect(@"..\FrontEnd\Main.aspx");
         }
     }
 }

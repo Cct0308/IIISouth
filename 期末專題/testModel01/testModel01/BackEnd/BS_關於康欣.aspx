@@ -7,7 +7,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
    
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" DeleteCommand="DELETE FROM [about] WHERE [Id] = @Id" InsertCommand="INSERT INTO [about] ([Id], [article]) VALUES (@Id, @article)" SelectCommand="SELECT * FROM [about]" UpdateCommand="UPDATE [about] SET [article] = @article WHERE [Id] = @Id">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" DeleteCommand="DELETE FROM [about] WHERE [Id] = @Id" InsertCommand="INSERT INTO [about] ([Id], [article]) VALUES (@Id, @article)" SelectCommand="SELECT * FROM [about]" UpdateCommand="UPDATE [about] SET [article] = @article WHERE [Id] = @Id">
             <DeleteParameters>
                 <asp:Parameter Name="Id" Type="Int32" />
             </DeleteParameters>

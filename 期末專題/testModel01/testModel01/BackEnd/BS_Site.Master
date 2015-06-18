@@ -28,7 +28,7 @@
                 <ul class="nav sidebar-nav main-menu">
                     <li class="sidebar-brand" style="height: 150px">
                         <div style="margin-top: 30px; text-align:center">
-                            <img src="../BackEndImg/ks.png" style="width:75px; height:75px"/>
+                            <img src="../BackEndImg/ks.png" />
                         </div>
                     </li>
                     <li>
@@ -52,8 +52,13 @@
                         </a>
                     </li>
                     <li>
+                        <a runat="server" href="~/BackEnd/BS_連結.aspx">
+                            <span class="glyphicon glyphicon-tag" aria-hidden="true"></span> 前台連結編輯<span class="icon"></span>
+                        </a>
+                    </li>
+                    <li>
                         <a runat="server" href="~/BackEnd/BS_前台輪播編輯.aspx">
-                            <span class="glyphicon glyphicon-book" aria-hidden="true"></span> 前台輪播編輯<span class="icon"></span>
+                            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>前台輪播編輯<span class="icon"></span>
                         </a>
                     </li>
                     <li>
@@ -85,6 +90,7 @@
                     </li>     
                 </ul>
                 <footer class="footer">
+                    <asp:Button ID="Button1" runat="server" Text="登出" OnClick="Button1_Click" OnClientClick="if (confirm('確定登出。')==false) {return false;}" />
                     <div>
                         <p class="text-muted">
                             &copy; <%: DateTime.Now.Year %> - KSYY<br />

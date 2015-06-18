@@ -21,7 +21,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="BodyContent" runat="server">
     <form id="formNewsContent" runat="server">
 
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [tNews] WHERE ([fId] = @fId)">
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" SelectCommand="SELECT * FROM [tNews] WHERE ([fId] = @fId)">
             <SelectParameters>
                 <asp:QueryStringParameter Name="fId" QueryStringField="fid" Type="Int32" />
             </SelectParameters>

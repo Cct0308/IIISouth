@@ -14,6 +14,13 @@
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <script src="Scripts/loginBackground.js"></script>    
+    <style type="text/css">
+        .mylogin_btn {
+        width:10%;
+        
+        }
+
+    </style>
 </head>
 <body>
     <div id="wrap">
@@ -24,18 +31,30 @@
         <img class="bgfade" src="loginImg/5.jpg">
     </div>
     <div class="container">
-        <form class="form-signin" role="form">
+        <form class="form-signin" role="form" runat="server">
             <h4 class="form-signin-heading">請輸入帳號及密碼登入</h4>
             <label for="inputAccount" class="sr-only">帳號</label>
-            <input type="text" id="inputAccount" class="form-control" placeholder="帳號" required="" autofocus="">
+            <asp:TextBox ID="TBox_id" runat="server"
+                 class="form-control" placeholder="請輸入帳號"
+                ></asp:TextBox>
             <label for="inputPassword" class="sr-only">密碼</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="密碼" required=""><div class="checkbox">
-                <label>
-                    <input type="checkbox" value="remember-me">
-                    記住我
-                </label>
-            </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">登入</button>
+             <asp:TextBox ID="TBox_pw" runat="server"
+                 class="form-control" placeholder="請輸入密碼" TextMode="Password"
+                ></asp:TextBox>   
+            <table class="nav-justified">
+                <tr>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="登入" class="btn btn-lg btn-primary btn-block mylogin_btn" OnClick="Button1_Click" />
+                    </td>
+                    <td>
+                        <asp:Button ID="Button2" runat="server" Text="清除" class="btn btn-lg btn-primary btn-block mylogin_btn" OnClick="Button2_Click" />
+                    </td>
+                </tr>
+            </table>
+              <p class="text-muted">
+                            &copy; <%: DateTime.Now.Year %> - KSYY<br />
+                            <a id="A1" runat="server" href="~/BackEnd/BS_Main.aspx">回首頁</a>
+                        </p>
         </form>
     </div>
 </body>

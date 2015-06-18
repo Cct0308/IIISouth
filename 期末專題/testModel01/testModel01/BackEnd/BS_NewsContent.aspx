@@ -19,7 +19,7 @@
 <body>
     <form id="formNewsEdit" runat="server">
         <div class="container-NewsEdit">
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [tNews] WHERE [fId] = @fId" InsertCommand="INSERT INTO [tNews] ([fDate], [fSubject], [fContent], [fPreview]) VALUES (@fDate, @fSubject, @fContent, @fPreview)" SelectCommand="SELECT [fId], [fDate], [fSubject], [fContent], [fPreview] FROM [tNews] WHERE ([fId] = @fId)" UpdateCommand="UPDATE [tNews] SET [fDate] = @fDate, [fSubject] = @fSubject, [fContent] = @fContent, [fPreview] = @fPreview WHERE [fId] = @fId">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" DeleteCommand="DELETE FROM [tNews] WHERE [fId] = @fId" InsertCommand="INSERT INTO [tNews] ([fDate], [fSubject], [fContent], [fPreview]) VALUES (@fDate, @fSubject, @fContent, @fPreview)" SelectCommand="SELECT [fId], [fDate], [fSubject], [fContent], [fPreview] FROM [tNews] WHERE ([fId] = @fId)" UpdateCommand="UPDATE [tNews] SET [fDate] = @fDate, [fSubject] = @fSubject, [fContent] = @fContent, [fPreview] = @fPreview WHERE [fId] = @fId">
                 <DeleteParameters>
                     <asp:Parameter Name="fId" Type="Int32" />
                 </DeleteParameters>

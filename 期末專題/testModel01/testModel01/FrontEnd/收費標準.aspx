@@ -22,28 +22,13 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="BodyContent" runat="server">
     <form id="form1" runat="server">
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" DeleteCommand="DELETE FROM [Fees_table_1] WHERE [room] = @room" InsertCommand="INSERT INTO [Fees_table_1] ([room], [price], [care], [careprice]) VALUES (@room, @price, @care, @careprice)" SelectCommand="SELECT * FROM [Fees_table_1]" UpdateCommand="UPDATE [Fees_table_1] SET [price] = @price, [care] = @care, [careprice] = @careprice WHERE [room] = @room">
-            <DeleteParameters>
-                <asp:Parameter Name="room" Type="String" />
-            </DeleteParameters>
-            <InsertParameters>
-                <asp:Parameter Name="room" Type="String" />
-                <asp:Parameter Name="price" Type="String" />
-                <asp:Parameter Name="care" Type="String" />
-                <asp:Parameter Name="careprice" Type="String" />
-            </InsertParameters>
-            <UpdateParameters>
-                <asp:Parameter Name="price" Type="String" />
-                <asp:Parameter Name="care" Type="String" />
-                <asp:Parameter Name="careprice" Type="String" />
-                <asp:Parameter Name="room" Type="String" />
-            </UpdateParameters>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' SelectCommand="SELECT * FROM [Fees_table_1]">
         </asp:SqlDataSource>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" SelectCommand="SELECT * FROM [note]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' SelectCommand="SELECT * FROM [note]"></asp:SqlDataSource>
 
 
 
-        <div class="hr1 margin-60"></div>
+         <div class="hr1 margin-60"></div>
         <h4 class="classic-title" id="收費標準表"><span>收費標準表</span></h4>
         <table style="background-color: #ff9933; width: 100%;">
             <tbody>
@@ -81,7 +66,6 @@
                 </tr>
             </tbody>
         </table>
-
 
 
         <div class="hr1 margin-60"></div>

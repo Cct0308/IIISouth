@@ -61,14 +61,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\KSYY.mdf" />
-    <Content Include="App_Data\KSYY_log.ldf">
-      <DependentUpon>KSYY.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\dbKYSS.mdf" />
-    <Content Include="App_Data\dbKYSS_log.ldf">
-      <DependentUpon>dbKYSS.mdf</DependentUpon>
-    </Content>
     <Content Include="AssessFile\word.png" />
     <Content Include="BackEndImg\BackEndImg01.jpg" />
     <Content Include="BackEnd\BS_Main.aspx" />
@@ -84,6 +76,7 @@
     <Content Include="BackEnd\BS_收費標準表.aspx" />
     <Content Include="BackEnd\BS_收費標準表Content.aspx" />
     <Content Include="BackEnd\BS_收費標準表Edit.aspx" />
+    <Content Include="BackEnd\BS_連結.aspx" />
     <Content Include="BackEnd\BS_關於康欣.aspx" />
     <Content Include="BackEnd\BS_床位顯示_地圖.aspx" />
     <Content Include="BackEnd\WebForm7.aspx" />
@@ -481,14 +474,14 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="FrontEnd\Main.aspx" />
     <Content Include="FrontEnd\收費標準.aspx" />
-    <Content Include="images\中華民國家庭照顧者關懷總會.jpg" />
-    <Content Include="images\中華民國老人福利推動聯盟.gif" />
-    <Content Include="images\台灣失智症協會.gif" />
-    <Content Include="images\台灣長期照顧專業協會.JPG" />
-    <Content Include="images\衛生福利部.jpg" />
-    <Content Include="images\衛生福利部_社會及家庭署.png" />
-    <Content Include="images\高雄市家庭照顧者關懷協會.png" />
-    <Content Include="images\高雄市政府社會局.png" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\7.jpg" />
+    <Content Include="images\8.jpg" />
     <Content Include="pic\床位照片\add_1.png" />
     <Content Include="pic\床位照片\add_2.png" />
     <Content Include="pic\床位照片\大頭照\defaultimg.png" />
@@ -696,7 +689,6 @@
     <Content Include="bin\testModel01.dll.config" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\testModel01.csprojResolveAssemblyReference.cache" />
-    <Content Include="BackEnd\BS_Site.Master" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
@@ -713,6 +705,7 @@
     <Content Include="Content\FrontEndCSS\css\bootstrap-theme.css.map" />
     <Content Include="Content\FrontEndCSS\css\bootstrap.css.map" />
     <Content Include="FrontEnd\Site.Master" />
+    <Content Include="BackEnd\BS_Site.Master" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="pic\ADD.png" />
     <Content Include="pic\empty.png" />
@@ -833,6 +826,13 @@
     </Compile>
     <Compile Include="BackEnd\BS_入住事項.aspx.designer.cs">
       <DependentUpon>BS_入住事項.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_連結.aspx.cs">
+      <DependentUpon>BS_連結.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_連結.aspx.designer.cs">
+      <DependentUpon>BS_連結.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\BS_關於康欣.aspx.cs">
       <DependentUpon>BS_關於康欣.aspx</DependentUpon>

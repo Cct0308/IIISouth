@@ -16,7 +16,7 @@
 <body>
     <form id="form100" runat="server">
         <div class="container-NewsEdit">
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" SelectCommand="SELECT * FROM [Fees_table_1] WHERE ([id] = @id)" DeleteCommand="DELETE FROM [Fees_table_1] WHERE [id] = @id" InsertCommand="INSERT INTO [Fees_table_1] ([room], [price], [care], [careprice]) VALUES (@room, @price, @care, @careprice)" UpdateCommand="UPDATE [Fees_table_1] SET [room] = @room, [price] = @price, [care] = @care, [careprice] = @careprice WHERE [id] = @id">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" SelectCommand="SELECT * FROM [Fees_table_1] WHERE ([id] = @id)" DeleteCommand="DELETE FROM [Fees_table_1] WHERE [id] = @id" InsertCommand="INSERT INTO [Fees_table_1] ([room], [price], [care], [careprice]) VALUES (@room, @price, @care, @careprice)" UpdateCommand="UPDATE [Fees_table_1] SET [room] = @room, [price] = @price, [care] = @care, [careprice] = @careprice WHERE [id] = @id">
                 <DeleteParameters>
                     <asp:Parameter Name="id" Type="Int32" />
                 </DeleteParameters>

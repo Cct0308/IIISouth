@@ -52,7 +52,7 @@
     <br />
     <asp:Button ID="btnInsert" runat="server" CssClass="btn btn-primary btn-lg" OnClick="btnInsert_Click" Text="新增消息公告" OnClientClick="return confirm('確定要新增消息嗎?')" />
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [tNews] WHERE [fId] = @fId" InsertCommand="INSERT INTO [tNews] ([fDate], [fSubject], [fContent], [fYear], [fMonth], [fDay], [fPreview]) VALUES (@fDate, @fSubject, @fContent, @fYear, @fMonth, @fDay, @fPreview)" SelectCommand="SELECT * FROM [tNews] ORDER BY [fId] DESC" UpdateCommand="UPDATE [tNews] SET [fDate] = @fDate, [fSubject] = @fSubject, [fContent] = @fContent, [fYear] = @fYear, [fMonth] = @fMonth, [fDay] = @fDay, [fPreview] = @fPreview WHERE [fId] = @fId">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" DeleteCommand="DELETE FROM [tNews] WHERE [fId] = @fId" InsertCommand="INSERT INTO [tNews] ([fDate], [fSubject], [fContent], [fYear], [fMonth], [fDay], [fPreview]) VALUES (@fDate, @fSubject, @fContent, @fYear, @fMonth, @fDay, @fPreview)" SelectCommand="SELECT * FROM [tNews] ORDER BY [fId] DESC" UpdateCommand="UPDATE [tNews] SET [fDate] = @fDate, [fSubject] = @fSubject, [fContent] = @fContent, [fYear] = @fYear, [fMonth] = @fMonth, [fDay] = @fDay, [fPreview] = @fPreview WHERE [fId] = @fId">
         <DeleteParameters>
             <asp:Parameter Name="fId" Type="Int32" />
         </DeleteParameters>

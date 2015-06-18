@@ -24,7 +24,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="BodyContent" runat="server">
     <form id="formMainNews" runat="server">
-        <asp:SqlDataSource ID="SqlDataSourceNews" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [tNews] order by fId desc" DataSourceMode="DataReader"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSourceNews" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" SelectCommand="SELECT * FROM [tNews] order by fId desc" DataSourceMode="DataReader"></asp:SqlDataSource>
 
         <div class="latest-posts">
             <h4 class="classic-title"><span>最新消息</span></h4>

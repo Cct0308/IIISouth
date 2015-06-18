@@ -188,11 +188,11 @@ namespace testModel01
                                                                 while (sdr其他.Read())
                                                                 {
                                                                     strLatestPicts += "<div class='element transition other' data-category='transition'>";
-                                                                    strLatestPicts += "<a href='" + sdr其他["f其他照片_s"].ToString() + "' class='thumb'>";
+                                                                    strLatestPicts += "<a href='" + sdr其他["f其他活動_s"].ToString() + "' class='thumb'>";
                                                                     strLatestPicts += "<figure class='img-polaroid'>";
-                                                                    strLatestPicts += "<img src='" + sdr其他["f其他照片_s"].ToString() + "' alt='' style='width:270px;height:190px'>";
+                                                                    strLatestPicts += "<img src='" + sdr其他["f其他活動_s"].ToString() + "' alt='' style='width:270px;height:190px'>";
                                                                     strLatestPicts += "</figure>";
-                                                                    strLatestPicts += "</a><span class='description'>" + sdr其他["f其他照片_l"].ToString() + "</span>";
+                                                                    strLatestPicts += "</a><span class='description'>" + sdr其他["f其他活動_l"].ToString() + "</span>";
                                                                     strLatestPicts += "</div>";
                                                                 }
                                                             }

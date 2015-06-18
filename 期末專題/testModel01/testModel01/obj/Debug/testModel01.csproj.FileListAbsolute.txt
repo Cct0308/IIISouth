@@ -59,5 +59,11 @@ C:\Users\shawn\Desktop\testModel01\testModel01\obj\Debug\testModel01.csprojResol
 C:\Users\shawn\Desktop\testModel01\testModel01\obj\Debug\testModel01.dll
 C:\Users\shawn\Desktop\testModel01\testModel01\obj\Debug\testModel01.pdb
 C:\Users\iii\Desktop\testModel01\testModel01\bin\CKEditor.NET.pdb
-C:\Users\iii\Documents\GitHub\KSYY\testModel01\testModel01\bin\testModel01.dll.config
 C:\Users\shawn\Desktop\GITHUB\KSYY\testModel01\testModel01\bin\CKEditor.NET.pdb
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (10)\testModel01\testModel01\bin\testModel01.dll.config
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (10)\testModel01\testModel01\bin\testModel01.dll
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (10)\testModel01\testModel01\bin\testModel01.pdb
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (10)\testModel01\testModel01\bin\CKEditor.NET.pdb
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (10)\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (10)\testModel01\testModel01\obj\Debug\testModel01.dll
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (10)\testModel01\testModel01\obj\Debug\testModel01.pdb
