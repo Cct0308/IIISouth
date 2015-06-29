@@ -21,7 +21,8 @@
                 <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Larger" />
                 <ItemStyle CssClass="text-center" Font-Size="Medium" />
                 <ItemTemplate>
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("fid", "BS_NewsContent.aspx?fid={0}") %>' Text='<%# Eval("fSubject") %>' ImageUrl="~/pic/reverse32x32.png" ToolTip="點我編輯" data-toggle="modal" data-target="#myModal"></asp:HyperLink>
+                    
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("fid", "/./BackEnd/BS_NewsContent.aspx?fid={0}") %>' Text='<%# Eval("fSubject") %>' ImageUrl="~/pic/reverse32x32.png" ToolTip="點我編輯" data-toggle="modal" data-target="#myModal"></asp:HyperLink>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="刪除">

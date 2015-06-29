@@ -61,13 +61,13 @@ namespace testModel01.BackEnd
              if (img1.ImageUrl.Length < 5)
              {
                
-                 img1.ImageUrl = @"../pic/床位照片/大頭照/defaultimg.png";
+                 img1.ImageUrl = @"/./pic/床位照片/大頭照/defaultimg.png";
              }
           
          }
          catch (Exception ee)
          {
-             img1.ImageUrl = @"../pic/床位照片/大頭照/defaultimg.png";
+             img1.ImageUrl = @"/./pic/床位照片/大頭照/defaultimg.png";
          }
          m_FindControl_Control(FormView16, typeof(Image));
          ((Image)contrl_temp).ImageUrl = img1.ImageUrl;
@@ -170,7 +170,7 @@ namespace testModel01.BackEnd
                     }
                     //上傳照片                   
                         fupload.SaveAs(Server.MapPath(@"~\pic\床位照片\大頭照\" + fupload.FileName));
-                        e.NewValues["f照片"] = @"..\pic\床位照片\大頭照\" + fupload.FileName;
+                        e.NewValues["f照片"] = @"\.\pic\床位照片\大頭照\" + fupload.FileName;
                  }
             }
            else

@@ -114,7 +114,7 @@
                             Text='<%# Eval("f庭院照片_s")  %>'/>
                     </div>
                     <div  style="text-align:center"  >
-        <a  href="BS_床位編輯.aspx?f床號=101">
+        <a href='<%# Eval("f庭院照片_s") %>'>
                         <img src='<%# Eval("f庭院照片_s") %>'  class="myimag_1"  />
                     </a>
 

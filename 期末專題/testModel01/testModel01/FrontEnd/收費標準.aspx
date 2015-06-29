@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="收費標準" Language="C#" MasterPageFile="~/FrontEnd/Site.Master" AutoEventWireup="true" CodeBehind="收費標準.aspx.cs" Inherits="testModel01.WebForm4" %>
 
 <asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
-    <div class="page-banner" style="padding:40px 0; background: url(../../images/banner.jpg) center #f9f9f9;">
+    <div class="page-banner" style="padding:40px 0; background: url(/./images/banner.jpg) center #f9f9f9;">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -10,7 +10,7 @@
           </div>
           <div class="col-md-6">
             <ul class="breadcrumbs">
-              <li><a href="Main.aspx">首頁</a></li>
+              <li><a href="/./FrontEnd/Main.aspx">首頁</a></li>
               <li>收費標準</li>
             </ul>
           </div>
@@ -96,15 +96,24 @@
         <div class="hr1 margin-60"></div>
         <h4 class="classic-title" id="日常照護收費評估表"><span>日常照護收費評估表</span></h4>
         <div>            
-            <a href="../AssessFile/assess.doc">
-                <img title="下載住民日常照護收費評估表.doc" src="../AssessFile/word.png" width="80" />
+            <a href="/./AssessFile/assess.doc">
+                <img title="下載住民日常照護收費評估表.doc" src="/./AssessFile/word.png" width="80" />
                 <span>康欣老人長期照顧中心 日常照護收費評估表</span>
             </a>
             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
-                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover table-striped" ShowHeader="False" Width="100%"></asp:GridView>
-                    <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick" Interval="1000"></asp:Timer>
+                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString='<%$ ConnectionStrings:dbKSYYConnectionString %>' SelectCommand="SELECT * FROM [t收費評估表]"></asp:SqlDataSource>
+                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover table-striped" ShowHeader="False" Width="100%" AutoGenerateColumns="False" DataKeyNames="f1" DataSourceID="SqlDataSource3">
+                        <Columns>
+                            <asp:BoundField DataField="f1" HeaderText="f1" ReadOnly="True" InsertVisible="False" SortExpression="f1" Visible="False"></asp:BoundField>
+                            <asp:BoundField DataField="f2" HeaderText="f2" SortExpression="f2"></asp:BoundField>
+                            <asp:BoundField DataField="f3" HeaderText="f3" SortExpression="f3"></asp:BoundField>
+                            <asp:BoundField DataField="f4" HeaderText="f4" SortExpression="f4"></asp:BoundField>
+                            <asp:BoundField DataField="f5" HeaderText="f5" SortExpression="f5"></asp:BoundField>
+                        </Columns>
+                    </asp:GridView>
+                    <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick" Interval="5000"></asp:Timer>
                 </ContentTemplate>
             </asp:UpdatePanel>
         </div>

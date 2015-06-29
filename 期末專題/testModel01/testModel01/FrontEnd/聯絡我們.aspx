@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="聯絡我們" Language="C#" MasterPageFile="~/FrontEnd/Site.Master" AutoEventWireup="true" CodeBehind="聯絡我們.aspx.cs" Inherits="testModel01.WebForm7" %>
 
 <asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
-    <div class="page-banner" style="padding: 40px 0; background: url(../../images/banner.jpg) center #f9f9f9;">
+    <div class="page-banner" style="padding: 40px 0; background: url(/./images/banner.jpg) center #f9f9f9;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="breadcrumbs">
-                        <li><a href="Main.aspx">首頁</a></li>
+                        <li><a href="/./FrontEnd/Main.aspx">首頁</a></li>
                         <li>聯絡我們</li>
                     </ul>
                 </div>
@@ -71,28 +71,57 @@
     <div class="row">
         <div class="col-md-8">
             <h4 class="classic-title"><span>聯絡我們</span></h4>
-            <form role="form" class="contact-form" id="contact-form" method="post">
-                <div class="form-group">
-                    <div class="controls">
-                        <input type="text" placeholder="姓名" name="name">
+            <form runat="server" role="form" class="contact-form" method="post">
+                <p style="color: red">
+                    <asp:Label ID="DisplayMessage2" runat="server" Visible="false" />
+                </p>
+                <asp:Panel ID="Panel1" runat="server" DefaultButton="btnSubmit">
+                    <div id="contact-form">
+                        <div class="form-group">
+                            <div class="controls">
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*信箱不可空白"
+                                    ControlToValidate="YourEmail" ValidationGroup="save" ForeColor="Red" />
+                                <asp:TextBox ID="YourEmail" runat="server" type="email" class="email" placeholder="輸入信箱" name="email" />
+                                <asp:RegularExpressionValidator runat="server" ID="RegularExpressionValidator23"
+                                    SetFocusOnError="true" Text="範例: username@gmail.com" ControlToValidate="YourEmail"
+                                    ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"
+                                    ValidationGroup="save" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="*密碼不可空白"
+                                    ControlToValidate="YourPassword" ValidationGroup="save" ForeColor="Red" />
+                                <asp:TextBox ID="YourPassword" runat="server" type="text" placeholder="輸入密碼" name="password" TextMode="Password" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*密碼確認不可空白"
+                                    ControlToValidate="YourPasswordCheck" ValidationGroup="save" ForeColor="Red" />
+                                <p style="color: red">
+                                    <asp:Label ID="DisplayMessage" runat="server" Visible="false" />
+                                </p>
+                                <asp:TextBox ID="YourPasswordCheck" runat="server" type="text" placeholder="密碼確認" name="passwordcheck" TextMode="Password" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*主旨不可空白"
+                                    ControlToValidate="YourSubject" ValidationGroup="save" ForeColor="Red" />
+                                <asp:TextBox ID="YourSubject" runat="server" type="text" class="requiredField" placeholder="輸入主旨" name="subject" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*訊息不可空白"
+                                    ControlToValidate="Comments" ValidationGroup="save" ForeColor="Red" />
+                                <asp:TextBox ID="Comments" runat="server" TextMode="MultiLine" Rows="10" placeholder="輸入訊息" name="message" />
+                            </div>
+                        </div>
+                        <asp:Button ID="btnSubmit" runat="server" Text="送出" OnClick="ButtonSendMail_Click" ValidationGroup="save" CssClass="btn-system btn-large" /><div id="success" style="color: #34495e;"></div>
                     </div>
-                </div>                
-                <div class="form-group">
-                    <div class="controls">
-                        <input type="email" class="email" placeholder="信箱" name="email">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="controls">
-                        <input type="text" class="requiredField" placeholder="主旨" name="subject">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="controls">
-                        <textarea rows="7" placeholder="訊息" name="message"></textarea>
-                    </div>
-                </div>
-                <button type="submit" id="submit" class="btn-system btn-large">送出</button><div id="success" style="color: #34495e;"></div>
+                </asp:Panel>
             </form>
         </div>
 

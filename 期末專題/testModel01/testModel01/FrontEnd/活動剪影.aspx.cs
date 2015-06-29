@@ -109,7 +109,7 @@ namespace testModel01
             //sds_other.ConnectionString = "Data Source=" + str_Data_Source + ";Initial Catalog=dbKSYY;Integrated Security=True";
             sds_other.ConnectionString = str_Data_Source;
             sds_other.SelectCommand = "SELECT fid,f其他活動_s,f其他活動_l from  T康欣_活動剪影 WHERE f其他活動_s IS NOT NULL";
-            System.Data.SqlClient.SqlDataReader sdr其他 = (System.Data.SqlClient.SqlDataReader)sds_cuthair.Select(DataSourceSelectArguments.Empty);
+            System.Data.SqlClient.SqlDataReader sdr其他 = (System.Data.SqlClient.SqlDataReader)sds_other.Select(DataSourceSelectArguments.Empty);
 
             if (sdr庭院.HasRows)
             {

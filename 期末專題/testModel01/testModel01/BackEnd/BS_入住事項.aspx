@@ -25,8 +25,8 @@
             <Columns>
                 <asp:BoundField DataField="fId" HeaderText="fId" InsertVisible="False" ReadOnly="True" SortExpression="fId" Visible="false" />
 
-                <asp:BoundField DataField="fNo" HeaderText="編號" SortExpression="fNo" HtmlEncode="False">
-                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" />
+                <asp:BoundField DataField="fNo" HeaderText="編號" SortExpression="fNo" HtmlEncode="False" >
+                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Large" Width="80px" />
                     <ItemStyle CssClass="text-left" Font-Size="Medium" />
                 </asp:BoundField>
 
@@ -39,12 +39,12 @@
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Larger" />
                     <ItemStyle CssClass="text-center" Font-Size="Medium" />
                     <ItemTemplate>
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("fId", "BS_入住事項editAttention.aspx?fId={0}") %>' Text='<%# Eval("fContent") %>' ImageUrl="~/pic/reverse32x32.png" ToolTip="點我編輯" data-toggle="modal" data-target="#myModal"></asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("fId", "/./BackEnd/BS_入住事項editAttention.aspx?fId={0}") %>' Text='<%# Eval("fContent") %>' ImageUrl="~/pic/reverse32x32.png" ToolTip="點我編輯" data-toggle="modal" data-target="#myModal"></asp:HyperLink>
                     </ItemTemplate>
                 </asp:TemplateField>
 
                 <asp:TemplateField HeaderText="刪除">
-                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Larger" />
+                    <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Larger" Width="80px"/>
                     <ItemStyle CssClass="text-center" Font-Size="Medium" />
                     <ItemTemplate>
                         <asp:ImageButton ID="ImageButton1" runat="server" CommandName="Delete" ImageUrl="~/pic/delete32x32.png" OnClientClick="return confirm('確定要刪除?')" ToolTip="點我刪除" />
@@ -62,7 +62,7 @@
         </div>
     </div>
 
-    <a href="BS_入住事項insertAttention.aspx" role="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalinsert">新增</a>
+    <a href="/./BackEnd/BS_入住事項insertAttention.aspx" role="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalinsert">新增</a>
     <div class="modal fade" id="myModalinsert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -105,7 +105,7 @@
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Larger" />
                     <ItemStyle CssClass="text-center" Font-Size="Medium" />
                     <ItemTemplate>
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("fId", "BS_入住事項editCommodity.aspx?fId={0}") %>' Text='<%# Eval("fContent") %>' ImageUrl="~/pic/reverse32x32.png" ToolTip="點我編輯" data-toggle="modal" data-target="#myModa2"></asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("fId", "/./BackEnd/BS_入住事項editCommodity.aspx?fId={0}") %>' Text='<%# Eval("fContent") %>' ImageUrl="~/pic/reverse32x32.png" ToolTip="點我編輯" data-toggle="modal" data-target="#myModa2"></asp:HyperLink>
                     </ItemTemplate>
                 </asp:TemplateField>
 
@@ -127,7 +127,7 @@
             </div>
         </div>
 
-        <a href="BS_入住事項insertCommodity.aspx" role="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalinsert2">新增</a>
+        <a href="/./BackEnd/BS_入住事項insertCommodity.aspx" role="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalinsert2">新增</a>
         <div class="modal fade" id="myModalinsert2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
             <div class="modal-dialog">
                 <div class="modal-content">

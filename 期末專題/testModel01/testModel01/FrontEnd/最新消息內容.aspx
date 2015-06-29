@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontEnd/Site.Master" AutoEventWireup="true" CodeBehind="最新消息內容.aspx.cs" Inherits="testModel01.WebForm14" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-    <div class="page-banner" style="padding: 40px 0; background: url(../../images/banner.jpg) center #f9f9f9;">
+    <div class="page-banner" style="padding: 40px 0; background: url(/./images/banner.jpg) center #f9f9f9;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="breadcrumbs">
-                        <li><a href="Main.aspx">首頁</a></li>
+                        <li><a href="/./FrontEnd/Main.aspx">首頁</a></li>
                         <li>消息內容</li>
                     </ul>
                 </div>

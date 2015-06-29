@@ -31,7 +31,7 @@
                     <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Medium" />
                     <ItemStyle CssClass="text-center" Font-Size="Medium" />
                     <ItemTemplate>
-       <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("id", "BS_收費標準表Edit.aspx?id={0}") %>' ImageUrl="~/pic/reverse32x32.png" ToolTip="點我修改" data-toggle="modal" data-target="#myModal"></asp:HyperLink>
+       <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("id", "/./BackEnd/BS_收費標準表Edit.aspx?id={0}") %>' ImageUrl="~/pic/reverse32x32.png" ToolTip="點我修改" data-toggle="modal" data-target="#myModal"></asp:HyperLink>
                     </ItemTemplate>
                 </asp:TemplateField>
 
@@ -45,7 +45,7 @@
         </Columns>
     </asp:GridView>
 
-    <a href="BS_收費標準表Content.aspx" title="點我新增" role="button" data-toggle="modal" data-target="#myModalinsert"><img src="../pic/new32x32.png" /></a> 
+    <a href="/./BackEnd/BS_收費標準表Content.aspx" title="點我新增" role="button" data-toggle="modal" data-target="#myModalinsert"><img src="/./pic/new32x32.png" /></a> 
     <div class="modal fade" id="myModalinsert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog">
             <div class="modal-content">

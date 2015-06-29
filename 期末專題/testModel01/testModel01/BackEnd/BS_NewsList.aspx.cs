@@ -25,6 +25,7 @@ namespace testModel01
             SqlDataSource1.Insert();
             txtDate.Text = dt.ToLongDateString();
             txtSubject.Text = "";
+	    txtPreview.Text = "";
             CKEditorControl1.Text = "";
         }
     }

@@ -66,6 +66,7 @@
     <Content Include="BackEnd\BS_Main.aspx" />
     <Content Include="BackEnd\BS_NewsContent.aspx" />
     <Content Include="BackEnd\BS_NewsList.aspx" />
+    <Content Include="BackEnd\BS_修改密碼.aspx" />
     <Content Include="BackEnd\BS_入住事項.aspx" />
     <Content Include="BackEnd\BS_入住事項editAttention.aspx" />
     <Content Include="BackEnd\BS_入住事項editCommodity.aspx" />
@@ -73,12 +74,15 @@
     <Content Include="BackEnd\BS_入住事項insertCommodity.aspx" />
     <Content Include="BackEnd\BS_前台輪播編輯.aspx" />
     <Content Include="BackEnd\BS_床位編輯.aspx" />
+    <Content Include="BackEnd\BS_影片播放.aspx" />
     <Content Include="BackEnd\BS_收費標準表.aspx" />
     <Content Include="BackEnd\BS_收費標準表Content.aspx" />
     <Content Include="BackEnd\BS_收費標準表Edit.aspx" />
+    <Content Include="BackEnd\BS_收費評估表.aspx" />
     <Content Include="BackEnd\BS_連結.aspx" />
     <Content Include="BackEnd\BS_關於康欣.aspx" />
     <Content Include="BackEnd\BS_床位顯示_地圖.aspx" />
+    <Content Include="BackEnd\BS_編輯影片.aspx" />
     <Content Include="BackEnd\WebForm7.aspx" />
     <Content Include="BackEnd\BS_床位顯示_表格.aspx" />
     <Content Include="bin\testModel01.dll" />
@@ -473,6 +477,7 @@
     <Content Include="Content\Sidebar.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="FrontEnd\Main.aspx" />
+    <Content Include="FrontEnd\影片播放.aspx" />
     <Content Include="FrontEnd\收費標準.aspx" />
     <Content Include="images\1.jpg" />
     <Content Include="images\2.jpg" />
@@ -482,6 +487,7 @@
     <Content Include="images\6.jpg" />
     <Content Include="images\7.jpg" />
     <Content Include="images\8.jpg" />
+    <Content Include="images\arrows.png" />
     <Content Include="pic\床位照片\add_1.png" />
     <Content Include="pic\床位照片\add_2.png" />
     <Content Include="pic\床位照片\大頭照\defaultimg.png" />
@@ -579,8 +585,6 @@
     <Content Include="headImg\1.jpg" />
     <Content Include="headImg\2.jpg" />
     <Content Include="headImg\3.jpg" />
-    <Content Include="headImg\4.jpg" />
-    <Content Include="headImg\5.jpg" />
     <Content Include="Icon.png" />
     <Content Include="Login.aspx" />
     <Content Include="loginImg\2.jpg" />
@@ -679,7 +683,6 @@
     <Content Include="Scripts\lightbox.min.js" />
     <Content Include="Scripts\測試物件.js" />
     <Content Include="TempFolder\collapse.aspx" />
-    <Content Include="BackEnd\BS_收費評估表.aspx" />
     <Content Include="TempFolder\sidebar.js" />
     <Content Include="自訂\WC1_html.ascx" />
     <Content Include="自訂\WC2_default.ascx" />
@@ -750,6 +753,13 @@
     <Compile Include="BackEnd\BS_Site.Master.designer.cs">
       <DependentUpon>BS_Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="BackEnd\BS_修改密碼.aspx.cs">
+      <DependentUpon>BS_修改密碼.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_修改密碼.aspx.designer.cs">
+      <DependentUpon>BS_修改密碼.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BackEnd\BS_入住事項editAttention.aspx.cs">
       <DependentUpon>BS_入住事項editAttention.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -792,6 +802,13 @@
     <Compile Include="BackEnd\BS_床位編輯.aspx.designer.cs">
       <DependentUpon>BS_床位編輯.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BackEnd\BS_影片播放.aspx.cs">
+      <DependentUpon>BS_影片播放.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_影片播放.aspx.designer.cs">
+      <DependentUpon>BS_影片播放.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BackEnd\BS_收費標準表.aspx.cs">
       <DependentUpon>BS_收費標準表.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -812,6 +829,13 @@
     </Compile>
     <Compile Include="BackEnd\BS_收費標準表Edit.aspx.designer.cs">
       <DependentUpon>BS_收費標準表Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_收費評估表.aspx.cs">
+      <DependentUpon>BS_收費評估表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_收費評估表.aspx.designer.cs">
+      <DependentUpon>BS_收費評估表.aspx</DependentUpon>
     </Compile>
     <Compile Include="BackEnd\BS_活動剪影後台.aspx.cs">
       <DependentUpon>BS_活動剪影後台.aspx</DependentUpon>
@@ -848,6 +872,13 @@
     <Compile Include="BackEnd\BS_床位顯示_地圖.aspx.designer.cs">
       <DependentUpon>BS_床位顯示_地圖.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BackEnd\BS_編輯影片.aspx.cs">
+      <DependentUpon>BS_編輯影片.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_編輯影片.aspx.designer.cs">
+      <DependentUpon>BS_編輯影片.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BackEnd\WebForm7.aspx.cs">
       <DependentUpon>WebForm7.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -875,6 +906,13 @@
     </Compile>
     <Compile Include="FrontEnd\Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\影片播放.aspx.cs">
+      <DependentUpon>影片播放.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\影片播放.aspx.designer.cs">
+      <DependentUpon>影片播放.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\收費標準.aspx.cs">
       <DependentUpon>收費標準.aspx</DependentUpon>
@@ -928,13 +966,6 @@
     </Compile>
     <Compile Include="TempFolder\collapse.aspx.designer.cs">
       <DependentUpon>collapse.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="BackEnd\BS_收費評估表.aspx.cs">
-      <DependentUpon>BS_收費評估表.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BackEnd\BS_收費評估表.aspx.designer.cs">
-      <DependentUpon>BS_收費評估表.aspx</DependentUpon>
     </Compile>
     <Compile Include="自訂\WC1_html.ascx.cs">
       <DependentUpon>WC1_html.ascx</DependentUpon>

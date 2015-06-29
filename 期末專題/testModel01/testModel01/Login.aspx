@@ -13,48 +13,39 @@
 
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="Scripts/bootstrap.js"></script>
-    <script src="Scripts/loginBackground.js"></script>    
-    <style type="text/css">
-        .mylogin_btn {
-        width:10%;
-        
-        }
+    <%--<script src="Scripts/loginBackground.js"></script>--%>
 
-    </style>
 </head>
 <body>
-    <div id="wrap">
-        <img class="bgfade" src="loginImg/1.jpg">
-        <img class="bgfade" src="loginImg/2.jpg">
-        <img class="bgfade" src="loginImg/3.jpg">
-        <img class="bgfade" src="loginImg/4.jpg">
-        <img class="bgfade" src="loginImg/5.jpg">
-    </div>
+    <%--<div id="wrap">
+        <img class="bgfade" src="loginImg/1.jpg" />
+        <img class="bgfade" src="loginImg/2.jpg" />
+        <img class="bgfade" src="loginImg/3.jpg" />
+        <img class="bgfade" src="loginImg/4.jpg" />
+        <img class="bgfade" src="loginImg/5.jpg" />
+    </div>--%>
     <div class="container">
         <form class="form-signin" role="form" runat="server">
             <h4 class="form-signin-heading">請輸入帳號及密碼登入</h4>
             <label for="inputAccount" class="sr-only">帳號</label>
             <asp:TextBox ID="TBox_id" runat="server"
-                 class="form-control" placeholder="請輸入帳號"
-                ></asp:TextBox>
+                class="form-control" placeholder="請輸入帳號"></asp:TextBox>
             <label for="inputPassword" class="sr-only">密碼</label>
-             <asp:TextBox ID="TBox_pw" runat="server"
-                 class="form-control" placeholder="請輸入密碼" TextMode="Password"
-                ></asp:TextBox>   
+            <asp:TextBox ID="TBox_pw" runat="server"
+                class="form-control" placeholder="請輸入密碼" TextMode="Password"></asp:TextBox>
             <table class="nav-justified">
                 <tr>
                     <td>
-                        <asp:Button ID="Button1" runat="server" Text="登入" class="btn btn-lg btn-primary btn-block mylogin_btn" OnClick="Button1_Click" />
+                        <asp:Button ID="Button1" runat="server" Text="登入" class="btn btn-lg btn-primary btn-block pull-left" Style="width: 140px" OnClick="Button1_Click" />
                     </td>
                     <td>
-                        <asp:Button ID="Button2" runat="server" Text="清除" class="btn btn-lg btn-primary btn-block mylogin_btn" OnClick="Button2_Click" />
+                        <asp:Button ID="Button2" runat="server" Text="清除" class="btn btn-lg btn-primary btn-block pull-right" Style="width: 140px" OnClick="Button2_Click" />
                     </td>
                 </tr>
             </table>
-              <p class="text-muted">
-                            &copy; <%: DateTime.Now.Year %> - KSYY<br />
-                            <a id="A1" runat="server" href="~/BackEnd/BS_Main.aspx">回首頁</a>
-                        </p>
+            <br />
+            <p class="text-muted pull-right">&copy; <%: DateTime.Now.Year %> - KSYY <a id="A1" runat="server" href="/./FrontEnd/Main.aspx">回首頁</a></p>
+            <br />
         </form>
     </div>
 </body>

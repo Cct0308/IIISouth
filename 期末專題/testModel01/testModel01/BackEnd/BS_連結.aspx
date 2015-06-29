@@ -3,8 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
-    <link href="../Content/jasny-bootstrap.min.css" rel="stylesheet" />
-    <script src="../Scripts/jasny-bootstrap.min.js"></script>
+    <link href="/./Content/jasny-bootstrap.min.css" rel="stylesheet" />
+    <script src="/./Scripts/jasny-bootstrap.min.js"></script>
     <div class="container">
         <table class="nav-justified">
             <tr>
@@ -157,8 +157,11 @@
                     </ItemTemplate>
                     <ControlStyle Width="50px" />
                 </asp:TemplateField>
-                <asp:BoundField DataField="fId" HeaderText="fId" InsertVisible="False" ReadOnly="True" SortExpression="fId" Visible="False" />
-                    <asp:TemplateField HeaderText="網站名稱" SortExpression="fName">
+                <asp:BoundField DataField="fId" HeaderText="編號" InsertVisible="False" ReadOnly="True" SortExpression="fId" >
+                    <HeaderStyle CssClass="info" />
+                    <ItemStyle HorizontalAlign="Center" />
+                    </asp:BoundField>
+<asp:TemplateField HeaderText="網站名稱" SortExpression="fName">
                         <EditItemTemplate>
                             <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("fName") %>' Width="100%"></asp:TextBox>
                         </EditItemTemplate>

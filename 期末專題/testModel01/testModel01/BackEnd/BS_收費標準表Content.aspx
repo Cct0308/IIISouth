@@ -8,12 +8,12 @@
 <head id="Head1" runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <link href="../Content/bootstrap.css" rel="stylesheet" />
-    <link href="../Content/BackEndUI.css" rel="stylesheet" />
-    <script src="../Scripts/jquery-1.9.1.js"></script>
-    <script src="../Scripts/bootstrap.js"></script>
+    <link href="/./Content/bootstrap.css" rel="stylesheet" />
+    <link href="/./Content/BackEndUI.css" rel="stylesheet" />
+    <script src="/./Scripts/jquery-1.9.1.js"></script>
+    <script src="/./Scripts/bootstrap.js"></script>
 
-    <script src="../ckeditor/ckeditor.js"></script>
+    <script src="/./ckeditor/ckeditor.js"></script>
     <style type="text/css">
         .新增樣式1 {
             font-family: 微軟正黑體;
@@ -34,7 +34,7 @@
         <div class="container-NewsEdit">
             <div class="modal-header">
                 <%--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>--%>
-                <h4 class="modal-title" id="myModalLabel">編輯中..</h4>
+                <h4 class="modal-title" id="myModalLabel">編輯中...</h4>
             </div>
             <div class="modal-body">
                 <table class="table table table-bordered table-condensed" style="width: 100%" runat="server" id="table2">
@@ -82,8 +82,8 @@
                 </table>
             </div>
             <div class="modal-footer">
-                <asp:LinkButton ID="InsertButton" runat="server" OnClick="InsertButton_Click" Text="新增" OnClientClick="return confirm('確定要新增？')" ToolTip="點我儲存"><img src="../pic/save32x32.png" /></asp:LinkButton>
-                <asp:LinkButton ID="InsertCancelButton" runat="server" OnClick="InsertCancelButton_Click" ToolTip="點我取消" ><img src="../pic/Cancel32x32.png" /></asp:LinkButton>
+                <asp:LinkButton ID="InsertButton" runat="server" OnClick="InsertButton_Click" Text="新增" OnClientClick="return confirm('確定要新增？')" ToolTip="點我儲存"><img src="/./pic/save32x32.png" /></asp:LinkButton>
+                <asp:LinkButton ID="InsertCancelButton" runat="server" OnClick="InsertCancelButton_Click" ToolTip="點我取消" ><img src="/./pic/Cancel32x32.png" /></asp:LinkButton>
             </div>
 
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbKSYYConnectionString %>" SelectCommand="SELECT * FROM [Fees_table_1]" DeleteCommand="DELETE FROM [Fees_table_1] WHERE [id] = @id" InsertCommand="INSERT INTO [Fees_table_1] ([room], [price], [care], [careprice]) VALUES (@room, @price, @care, @careprice)" UpdateCommand="UPDATE [Fees_table_1] SET [room] = @room, [price] = @price, [care] = @care, [careprice] = @careprice WHERE [id] = @id" >

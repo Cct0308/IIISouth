@@ -27,12 +27,12 @@ namespace testModel01.BackEnd
         protected void InsertButton_Click(object sender, EventArgs e)
         {
             SqlDataSource1.Insert();
-            Response.Redirect("BS_收費標準表.aspx");
+            Response.Redirect("/./BackEnd/BS_收費標準表.aspx");
         }
 
         protected void InsertCancelButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("BS_收費標準表.aspx");
+            Response.Redirect("/./BackEnd/BS_收費標準表.aspx");
         }
     }
 }

@@ -17,13 +17,13 @@ namespace testModel01.BackEnd
         {
             if (e.CommandName == "Cancel")
             {
-                Response.Redirect("BS_收費標準表.aspx");
+                Response.Redirect("/./BackEnd/BS_收費標準表.aspx");
             }
         }
 
         protected void FormView1_ItemUpdated(object sender, FormViewUpdatedEventArgs e)
         {
-            Response.Redirect("BS_收費標準表.aspx");
+            Response.Redirect("/./BackEnd/BS_收費標準表.aspx");
         }
     }
 }

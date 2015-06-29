@@ -6,8 +6,8 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <link href="../Content/bootstrap.css" rel="stylesheet" />
-    <link href="../Content/jquery-ui.css" rel="stylesheet" />
+    <link href="/./Content/bootstrap.css" rel="stylesheet" />
+    <link href="/./Content/jquery-ui.css" rel="stylesheet" />
 
     <style type="text/css">
         
@@ -49,10 +49,10 @@
 
     </style>
 
-    <script src="../Scripts/jquery-1.9.1.js"></script>
-    <script src="../Scripts/jquery-ui.js"></script>
-    <script src="../Scripts/bootstrap.js"></script>
-    <script src="../Scripts/jquery.ui.datepicker-zh-TW.js"></script>
+    <script src="/./Scripts/jquery-1.9.1.js"></script>
+    <script src="/./Scripts/jquery-ui.js"></script>
+    <script src="/./Scripts/bootstrap.js"></script>
+    <script src="/./Scripts/jquery.ui.datepicker-zh-TW.js"></script>
 
 </head>
 <body>
@@ -64,33 +64,12 @@
                 SelectCommand="SELECT * FROM [T床位系統] WHERE ([f床號] = @f床號)"
                 OldValuesParameterFormatString="original_{0}"
                 DeleteCommand="UPDATE [T床位系統] SET  [f入住日期] =NULL, [f姓名] = NULL, [f身份證字號] = NULL, [f生日] = NULL, [f住址] = NULL, [f家電] = NULL, [f聯絡人] = NULL, [f聯絡人家電] = NULL, [f聯絡人手機] = NULL, [f指定醫院] = NULL, [f是否住院中] = 0, [f鼻胃管] = 0, [f導尿管] = 0, [f其他管路] = NULL, [f耗材] = NULL, [f其他] = NULL, [f備註] = NULL, [f照片] = NULL ,f宗教=NULL where [f床號] = @original_f床號"
-                InsertCommand="INSERT INTO [T床位系統] ([f床號], [f入住日期], [f姓名], [f身份證字號], [f生日], [f住址], [f家電], [f聯絡人], [f聯絡人家電], [f聯絡人手機], [f指定醫院], [f是否住院中], [f鼻胃管], [f導尿管], [f其他管路], [f耗材], [f其他], [f備註], [f照片], [f宗教]) VALUES (@f床號, @f入住日期, @f姓名, @f身份證字號, @f生日, @f住址, @f家電, @f聯絡人, @f聯絡人家電, @f聯絡人手機, @f指定醫院, @f是否住院中, @f鼻胃管, @f導尿管, @f其他管路, @f耗材, @f其他, @f備註, @f照片, @f宗教)"
+                
                 UpdateCommand="UPDATE [T床位系統] SET [f入住日期] = @f入住日期, [f姓名] = @f姓名, [f身份證字號] = @f身份證字號, [f生日] = @f生日, [f住址] = @f住址, [f家電] = @f家電, [f聯絡人] = @f聯絡人, [f聯絡人家電] = @f聯絡人家電, [f聯絡人手機] = @f聯絡人手機, [f指定醫院] = @f指定醫院, [f是否住院中] = @f是否住院中, [f鼻胃管] = @f鼻胃管, [f導尿管] = @f導尿管, [f其他管路] = @f其他管路, [f耗材] = @f耗材, [f其他] = @f其他, [f備註] = @f備註, [f照片] = @f照片, [f宗教] = @f宗教 WHERE [f床號] = @original_f床號">
                 <DeleteParameters>
                     <asp:Parameter Name="original_f床號" Type="String"></asp:Parameter>
                 </DeleteParameters>
-                <InsertParameters>
-                    <asp:Parameter Name="f床號" Type="String"></asp:Parameter>
-                    <asp:Parameter DbType="Date" Name="f入住日期"></asp:Parameter>
-                    <asp:Parameter Name="f姓名" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f身份證字號" Type="String"></asp:Parameter>
-                    <asp:Parameter DbType="Date" Name="f生日"></asp:Parameter>
-                    <asp:Parameter Name="f住址" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f家電" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f聯絡人" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f聯絡人家電" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f聯絡人手機" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f指定醫院" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f是否住院中" Type="Int32"></asp:Parameter>
-                    <asp:Parameter Name="f鼻胃管" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f導尿管" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f其他管路" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f耗材" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f其他" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f備註" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f照片" Type="String"></asp:Parameter>
-                    <asp:Parameter Name="f宗教" Type="String"></asp:Parameter>
-                </InsertParameters>
+                
                 <SelectParameters>
                     <asp:QueryStringParameter QueryStringField="f床號" Name="f床號" Type="String"></asp:QueryStringParameter>
                 </SelectParameters>

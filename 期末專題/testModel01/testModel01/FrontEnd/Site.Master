@@ -13,28 +13,28 @@
     <meta name="author" content="">
 
     <!-- CSS -->
-    <link href="../Content/FrontEndCSS/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="../Content/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/style.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/responsive.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/animate.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/./Content/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/responsive.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/animate.css" rel="stylesheet" type="text/css" media="screen" />
     <!-- Picts CSS -->
-    <link href="../Content/FrontEndPicsCSS/style.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="../Content/FrontEndPicsCSS/touchTouch.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndPicsCSS/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndPicsCSS/touchTouch.css" rel="stylesheet" type="text/css" media="screen" />
 
     <!-- Color CSS -->
-    <link href="../Content/FrontEndCSS/colors/beige.css" rel="stylesheet" title="beige" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/colors/blue.css" rel="stylesheet" title="blue" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/colors/cyan.css" rel="stylesheet" title="cyan" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/colors/green.css" rel="stylesheet" title="green" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/colors/jade.css" rel="stylesheet" title="jade" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/colors/orange.css" rel="stylesheet" title="orange" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/colors/peach.css" rel="stylesheet" title="peach" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/colors/pink.css" rel="stylesheet" title="pink" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/colors/purple.css" rel="stylesheet" title="purple" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/colors/red.css" rel="stylesheet" title="red" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/colors/sky-blue.css" rel="stylesheet" title="sky-blue" type="text/css" media="screen" />
-    <link href="../Content/FrontEndCSS/colors/yellow.css" rel="stylesheet" title="yellow" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/colors/beige.css" rel="stylesheet" title="beige" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/colors/blue.css" rel="stylesheet" title="blue" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/colors/cyan.css" rel="stylesheet" title="cyan" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/colors/green.css" rel="stylesheet" title="green" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/colors/jade.css" rel="stylesheet" title="jade" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/colors/orange.css" rel="stylesheet" title="orange" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/colors/peach.css" rel="stylesheet" title="peach" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/colors/pink.css" rel="stylesheet" title="pink" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/colors/purple.css" rel="stylesheet" title="purple" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/colors/red.css" rel="stylesheet" title="red" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/colors/sky-blue.css" rel="stylesheet" title="sky-blue" type="text/css" media="screen" />
+    <link href="/./Content/FrontEndCSS/colors/yellow.css" rel="stylesheet" title="yellow" type="text/css" media="screen" />
 
 </head>
 <body>
@@ -49,25 +49,25 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-brand" href="Main.aspx">
+                        <a class="navbar-brand" href="/./FrontEnd/Main.aspx">
                             <h5 style="margin-top: -15px">
-                                <img alt="" src="../BackEndImg/ks.png" style="max-height: 50px">
+                                <img alt="" src="/./BackEndImg/ks.png" style="max-height: 50px">
                                 <span>康欣老人長期照顧中心【養護型】</span>
                             </h5>
                         </a>
                     </div>
                     <div class="navbar-collapse collapse">
-                        <div class="search-side">
+                        <%--<div class="search-side">
                             <a href="#" class="show-search"><i class="fa fa-search"></i></a>
                             <div class="search-form">
                                 <form autocomplete="off" role="search" method="get" class="searchform" action="#">
-                                    <input type="text" value="" name="s" id="s" placeholder="Search the site...">
+                                    <input type="text" value="" name="s" id="s" placeholder="Search the site/..">
                                 </form>
                             </div>
-                        </div>
+                        </div>--%>
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a class="" href="Main.aspx">首頁</a>
+                                <a class="" href="/./FrontEnd/Main.aspx">首頁</a>
                             </li>
                             <%--<li>
                                 <a href="#"></a>
@@ -80,21 +80,24 @@
                                 </ul>
                             </li>--%>
                             <li>
-                                <a href="關於康欣.aspx">關於康欣</a>
+                                <a href="/./FrontEnd/關於康欣.aspx">關於康欣</a>
                             </li>
                             <li>
-                                <a href="活動剪影.aspx">康欣剪影</a>
+                                <a href="/./FrontEnd/活動剪影.aspx">康欣剪影</a>
+                            </li>
+                            <li>
+                                <a href="/./FrontEnd/影片播放.aspx">影片播放</a>
                             </li>
                             <li>
                                 <a href="#">收費標準</a>
                                 <ul class="dropdown">
-                                    <li><a href="收費標準.aspx#收費標準表">收費標準表</a></li>
-                                    <li><a href="收費標準.aspx#入住注意事項">入住注意事項</a></li>
-                                    <li><a href="收費標準.aspx#日常照護收費評估表">日常照護收費評估表</a></li>
+                                    <li><a href="/./FrontEnd/收費標準.aspx#收費標準表">收費標準表</a></li>
+                                    <li><a href="/./FrontEnd/收費標準.aspx#入住注意事項">入住注意事項</a></li>
+                                    <li><a href="/./FrontEnd/收費標準.aspx#日常照護收費評估表">日常照護收費評估表</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="聯絡我們.aspx">聯絡我們</a>
+                                <a href="/./FrontEnd/聯絡我們.aspx">聯絡我們</a>
                             </li>
                         </ul>
                     </div>
@@ -144,7 +147,7 @@
                     <div class="col-md-3 row" style="width: 100%">
                         <div class="col-md-6" style="width: auto; margin-top: -20px">
                             <p>
-                                <img src="../BackEndImg/ks.png" style="max-height: 50px" />
+                                <img src="/./BackEndImg/ks.png" style="max-height: 50px" />
                             </p>
                         </div>
                         <div class="col-md-6" style="width: auto">
@@ -171,7 +174,7 @@
                         </div>
                         <div class="col-md-6">
                             <ul class="footer-nav">
-                                <li><a href="../Login.aspx">BackEnd</a></li>
+                                <li><a href="/./Login.aspx">BackEnd</a></li>
                             </ul>
                         </div>
                     </div>
@@ -238,18 +241,18 @@
         </ul>
     </div>
 
-    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/jquery-2.1.1.min.js"></script>
     <!-- Picts JS -->
-    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery-migrate-1.2.1.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/superfish.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.mobilemenu.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.ui.totop.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.touchSwipe.min.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.equalheights.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/touchTouch.jquery.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndPicsJS/jquery.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndPicsJS/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndPicsJS/superfish.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndPicsJS/jquery.mobilemenu.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndPicsJS/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndPicsJS/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndPicsJS/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndPicsJS/jquery.equalheights.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndPicsJS/touchTouch.jquery.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndPicsJS/jquery.isotope.min.js"></script>
     <script type="text/javascript">
         $(window).load(function () {
             var $containerpics = $('#containerpics');
@@ -349,31 +352,31 @@
 
         });
     </script>
-    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndPicsJS/tm-scripts.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndPicsJS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndPicsJS/tm-scripts.js"></script>
     <!-- JS -->
-    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.migrate.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/modernizrr.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/nivo-lightbox.min.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.isotope.min.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.appear.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/count-to.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.textillate.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.lettering.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.easypiechart.min.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.nicescroll.min.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/jquery.parallax.js"></script>
-    <script type="text/javascript" src="../Scripts/FrontEndJS/script.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/jquery.migrate.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/modernizrr.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/nivo-lightbox.min.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/jquery.appear.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/count-to.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/jquery.textillate.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/jquery.lettering.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/jquery.parallax.js"></script>
+    <script type="text/javascript" src="/./Scripts/FrontEndJS/script.js"></script>
 
     <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--[if lt IE 9]>
     <div style='text-align:center'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>  
     <link rel="stylesheet" href="assets/tm/css/tm_docs.css" type="text/css" media="screen">
-    <script src="../Scripts/FrontEndPicsJS/html5shiv.js"></script>
-    <script src="../Scripts/FrontEndPicsJS/respond.min.js"></script>
+    <script src="/./Scripts/FrontEndPicsJS/html5shiv.js"></script>
+    <script src="/./Scripts/FrontEndPicsJS/respond.min.js"></script>
     <![endif]-->
 </body>
 </html>

@@ -13,7 +13,7 @@ namespace testModel01
         {
             if (Session["login"]==null || (Session["login"].ToString() != "已登入"))
                 {
-                    Response.Redirect(@"..\Login.aspx");
+                    Response.Redirect(@"\.\Login.aspx");
                 }
 
         }
@@ -21,7 +21,12 @@ namespace testModel01
         protected void Button1_Click(object sender, EventArgs e)
         {
             Session["login"] = null;
-            Response.Redirect(@"..\FrontEnd\Main.aspx");
+            Response.Redirect(@"\.\Login.aspx");
+        }
+
+        protected void ButtonBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(@"\.\FrontEnd\Main.aspx");
         }
     }
 }

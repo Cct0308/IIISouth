@@ -6,12 +6,12 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link href="../Content/bootstrap.css" rel="stylesheet" />
-    <link href="../Content/BackEndUI.css" rel="stylesheet" />
-    <script src="../Scripts/jquery-1.9.1.js"></script>
-    <script src="../Scripts/bootstrap.js"></script>
+    <link href="/./Content/bootstrap.css" rel="stylesheet" />
+    <link href="/./Content/BackEndUI.css" rel="stylesheet" />
+    <script src="/./Scripts/jquery-1.9.1.js"></script>
+    <script src="/./Scripts/bootstrap.js"></script>
 
-    <script src="../ckeditor/ckeditor.js"></script>
+    <script src="/./ckeditor/ckeditor.js"></script>
 </head>
 <body>
     <form id="form4" runat="server">
@@ -40,7 +40,7 @@
                 
                 <div class="modal-header">
                         <%--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>--%>
-                        <h4 class="modal-title" id="myModalLabel">編輯中..</h4>
+                        <h4 class="modal-title" id="myModalLabel">編輯中...</h4>
                     </div>
                     <div class="modal-body">
                         <table class="table table table-bordered table-condensed" style="width: 100%">

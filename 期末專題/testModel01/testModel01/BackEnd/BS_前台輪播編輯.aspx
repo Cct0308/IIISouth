@@ -3,8 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
-    <link href="../Content/jasny-bootstrap.min.css" rel="stylesheet" />
-    <script src="../Scripts/jasny-bootstrap.min.js"></script>
+    <link href="/./Content/jasny-bootstrap.min.css" rel="stylesheet" />
+    <script src="/./Scripts/jasny-bootstrap.min.js"></script>
 
     
 

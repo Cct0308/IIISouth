@@ -26,7 +26,7 @@ namespace testModel01.BackEnd
         {
             if (FileUpload1.HasFile)
             {                
-                string savePath = Server.MapPath(@"../images/1.jpg");                
+                string savePath = Server.MapPath(@"/./images/1.jpg");                
                 FileUpload1.SaveAs(savePath);
                 lbl1.Visible = true;
                 lbl1.Text = "上傳成功";
@@ -37,7 +37,7 @@ namespace testModel01.BackEnd
         {
             if (FileUpload2.HasFile)
             {                
-                string savePath = Server.MapPath(@"../images/2.jpg");               
+                string savePath = Server.MapPath(@"/./images/2.jpg");               
                 FileUpload2.SaveAs(savePath);
                 lbl2.Visible = true;
                 lbl2.Text = "上傳成功";
@@ -48,7 +48,7 @@ namespace testModel01.BackEnd
         {
             if (FileUpload3.HasFile)
             {
-                string savePath = Server.MapPath(@"../images/3.jpg");
+                string savePath = Server.MapPath(@"/./images/3.jpg");
                 FileUpload3.SaveAs(savePath);
                 lbl3.Visible = true;
                 lbl3.Text = "上傳成功";
@@ -59,7 +59,7 @@ namespace testModel01.BackEnd
         {
             if (FileUpload4.HasFile)
             {
-                string savePath = Server.MapPath(@"../images/4.jpg");
+                string savePath = Server.MapPath(@"/./images/4.jpg");
                 FileUpload4.SaveAs(savePath);
                 lbl4.Visible = true;
                 lbl4.Text = "上傳成功";
@@ -70,7 +70,7 @@ namespace testModel01.BackEnd
         {
             if (FileUpload5.HasFile)
             {
-                string savePath = Server.MapPath(@"../images/5.jpg");
+                string savePath = Server.MapPath(@"/./images/5.jpg");
                 FileUpload5.SaveAs(savePath);
                 lbl5.Visible = true;
                 lbl5.Text = "上傳成功";
@@ -81,7 +81,7 @@ namespace testModel01.BackEnd
         {
             if (FileUpload6.HasFile)
             {
-                string savePath = Server.MapPath(@"../images/6.jpg");
+                string savePath = Server.MapPath(@"/./images/6.jpg");
                 FileUpload6.SaveAs(savePath);
                 lbl6.Visible = true;
                 lbl6.Text = "上傳成功";
@@ -92,7 +92,7 @@ namespace testModel01.BackEnd
         {
             if (FileUpload7.HasFile)
             {
-                string savePath = Server.MapPath(@"../images/7.jpg");
+                string savePath = Server.MapPath(@"/./images/7.jpg");
                 FileUpload7.SaveAs(savePath);
                 lbl7.Visible = true;
                 lbl7.Text = "上傳成功";
@@ -103,7 +103,7 @@ namespace testModel01.BackEnd
         {
             if (FileUpload8.HasFile)
             {
-                string savePath = Server.MapPath(@"../images/8.jpg");
+                string savePath = Server.MapPath(@"/./images/8.jpg");
                 FileUpload8.SaveAs(savePath);
                 lbl8.Visible = true;
                 lbl8.Text = "上傳成功";

@@ -1,9 +1,3 @@
-C:\Users\Cct\Desktop\testModel01\testModel01\bin\testModel01.dll.config
-C:\Users\Cct\Desktop\testModel01\testModel01\bin\testModel01.dll
-C:\Users\Cct\Desktop\testModel01\testModel01\bin\testModel01.pdb
-C:\Users\Cct\Desktop\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
-C:\Users\Cct\Desktop\testModel01\testModel01\obj\Debug\testModel01.dll
-C:\Users\Cct\Desktop\testModel01\testModel01\obj\Debug\testModel01.pdb
 C:\Users\iii\Desktop\testModel01\testModel01\bin\testModel01.dll
 C:\Users\iii\Desktop\testModel01\testModel01\bin\testModel01.pdb
 C:\Users\iii\Desktop\testModel01\testModel01\obj\Debug\testModel01.dll
@@ -67,3 +61,55 @@ C:\Users\iii\Desktop\新增資料夾\新增資料夾 (10)\testModel01\testModel0
 C:\Users\iii\Desktop\新增資料夾\新增資料夾 (10)\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
 C:\Users\iii\Desktop\新增資料夾\新增資料夾 (10)\testModel01\testModel01\obj\Debug\testModel01.dll
 C:\Users\iii\Desktop\新增資料夾\新增資料夾 (10)\testModel01\testModel01\obj\Debug\testModel01.pdb
+C:\Users\redmars\Desktop\kerker\123\testModel01\testModel01\bin\testModel01.dll.config
+C:\Users\redmars\Desktop\kerker\123\testModel01\testModel01\bin\testModel01.dll
+C:\Users\redmars\Desktop\kerker\123\testModel01\testModel01\bin\testModel01.pdb
+C:\Users\redmars\Desktop\kerker\123\testModel01\testModel01\bin\CKEditor.NET.pdb
+C:\Users\redmars\Desktop\kerker\123\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
+C:\Users\redmars\Desktop\kerker\123\testModel01\testModel01\obj\Debug\testModel01.dll
+C:\Users\redmars\Desktop\kerker\123\testModel01\testModel01\obj\Debug\testModel01.pdb
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\bin\testModel01.dll.config
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\bin\testModel01.dll
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\bin\testModel01.pdb
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\bin\CKEditor.NET.pdb
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\obj\Debug\testModel01.dll
+C:\Users\redmars\Desktop\KSYY\testModel01\testModel01\obj\Debug\testModel01.pdb
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (13)\testModel01\testModel01\bin\testModel01.dll.config
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (13)\testModel01\testModel01\bin\testModel01.dll
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (13)\testModel01\testModel01\bin\testModel01.pdb
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (13)\testModel01\testModel01\bin\CKEditor.NET.pdb
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (13)\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (13)\testModel01\testModel01\obj\Debug\testModel01.dll
+C:\Users\iii\Desktop\新增資料夾\新增資料夾 (13)\testModel01\testModel01\obj\Debug\testModel01.pdb
+F:\testModel01\testModel01\bin\testModel01.dll
+F:\testModel01\testModel01\bin\testModel01.pdb
+F:\testModel01\testModel01\bin\CKEditor.NET.pdb
+F:\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
+F:\testModel01\testModel01\obj\Debug\testModel01.dll
+F:\testModel01\testModel01\obj\Debug\testModel01.pdb
+C:\Users\iii\Desktop\123\testModel01\testModel01\bin\testModel01.dll.config
+C:\Users\iii\Desktop\123\testModel01\testModel01\bin\testModel01.dll
+C:\Users\iii\Desktop\123\testModel01\testModel01\bin\testModel01.pdb
+C:\Users\iii\Desktop\123\testModel01\testModel01\bin\CKEditor.NET.pdb
+C:\Users\iii\Desktop\123\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
+C:\Users\iii\Desktop\123\testModel01\testModel01\obj\Debug\testModel01.dll
+C:\Users\iii\Desktop\123\testModel01\testModel01\obj\Debug\testModel01.pdb
+C:\Users\iii\Desktop\github\KSYY\新的 USB資料\testModel01\testModel01\bin\testModel01.dll
+C:\Users\iii\Desktop\github\KSYY\新的 USB資料\testModel01\testModel01\bin\testModel01.pdb
+C:\Users\iii\Desktop\github\KSYY\新的 USB資料\testModel01\testModel01\bin\CKEditor.NET.pdb
+C:\Users\iii\Desktop\github\KSYY\新的 USB資料\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
+C:\Users\iii\Desktop\github\KSYY\新的 USB資料\testModel01\testModel01\obj\Debug\testModel01.dll
+C:\Users\iii\Desktop\github\KSYY\新的 USB資料\testModel01\testModel01\obj\Debug\testModel01.pdb
+D:\GitHub\KSYY\新的 USB資料\testModel01\testModel01\bin\testModel01.dll.config
+D:\GitHub\KSYY\新的 USB資料\testModel01\testModel01\bin\testModel01.dll
+D:\GitHub\KSYY\新的 USB資料\testModel01\testModel01\bin\testModel01.pdb
+D:\GitHub\KSYY\新的 USB資料\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache
+D:\GitHub\KSYY\新的 USB資料\testModel01\testModel01\obj\Debug\testModel01.dll
+D:\GitHub\KSYY\新的 USB資料\testModel01\testModel01\obj\Debug\testModel01.pdb
+C:\Users\Cct\Desktop\testModel01\testModel01\bin\testModel01.dll.config
+C:\Users\Cct\Desktop\testModel01\testModel01\bin\testModel01.dll
+C:\Users\Cct\Desktop\testModel01\testModel01\bin\testModel01.pdb
+C:\Users\Cct\Desktop\testModel01\testModel01\obj\Debug\testModel01.dll
+C:\Users\Cct\Desktop\testModel01\testModel01\obj\Debug\testModel01.pdb
+C:\Users\Cct\Desktop\testModel01\testModel01\obj\Debug\testModel01.csprojResolveAssemblyReference.cache

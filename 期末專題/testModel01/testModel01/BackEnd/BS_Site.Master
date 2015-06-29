@@ -7,19 +7,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title><%: Page.Title %> - backStage_WebForm</title>
 
-    <link href="../Content/bootstrap.css" rel="stylesheet" />
-    <link href="../Content/Sidebar.css" rel="stylesheet" />
-    <link href="../Content/BackEndUI.css" rel="stylesheet" />
-    <script src="../Scripts/jquery-1.9.1.js"></script>
-    <script src="../Scripts/bootstrap.js"></script>
-    <script src="../Scripts/Sidebar.js"></script>
-    <script src="../Scripts/BackEndUI.js"></script>    
+    <link href="/./Content/bootstrap.css" rel="stylesheet" />
+    <link href="/./Content/Sidebar.css" rel="stylesheet" />
+    <link href="/./Content/BackEndUI.css" rel="stylesheet" />
+    <script src="/./Scripts/jquery-1.9.1.js"></script>
+    <script src="/./Scripts/bootstrap.js"></script>
+    <script src="/./Scripts/Sidebar.js"></script>
+    <%--<script src="/./Scripts/BackEndUI.js"></script>--%>    
 
 </head>
 <body>
-    <div id="wrap">
-        <img class="bgfade" src="../BackEndImg/BackEndImg01.jpg">
-    </div>
+    <%--<div id="wrap">
+        <img class="bgfade" src="/./BackEndImg/BackEndImg01.jpg">
+    </div>--%>
 
     <form id="form1" runat="server">        
         <div id="wrapper">
@@ -28,13 +28,8 @@
                 <ul class="nav sidebar-nav main-menu">
                     <li class="sidebar-brand" style="height: 150px">
                         <div style="margin-top: 30px; text-align:center">
-                            <img src="../BackEndImg/ks.png" />
+                            <img src="/./BackEndImg/ks.png" style="width:75px;height:70px" />
                         </div>
-                    </li>
-                    <li>
-                        <a runat="server" href="~/BackEnd/BS_NewsList.aspx">
-                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 最新消息<span class="icon"></span>
-                        </a>
                     </li>
                     <li>
                         <a runat="server" href="~/BackEnd/BS_關於康欣.aspx">
@@ -42,8 +37,18 @@
                         </a>
                     </li>
                     <li>
+                        <a runat="server" href="~/BackEnd/BS_NewsList.aspx">
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 最新消息<span class="icon"></span>
+                        </a>
+                    </li>                    
+                    <li>
                         <a runat="server" href="~/BackEnd/BS_收費標準表.aspx">
                             <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 收費標準表<span class="icon"></span>
+                        </a>
+                    </li>
+		    <li>
+                        <a runat="server" href="~/BackEnd/BS_收費評估表.aspx">
+                            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 收費評估表<span class="icon"></span>
                         </a>
                     </li>
                     <li>
@@ -55,17 +60,12 @@
                         <a runat="server" href="~/BackEnd/BS_連結.aspx">
                             <span class="glyphicon glyphicon-tag" aria-hidden="true"></span> 前台連結編輯<span class="icon"></span>
                         </a>
-                    </li>
+                    </li>                    
                     <li>
                         <a runat="server" href="~/BackEnd/BS_前台輪播編輯.aspx">
-                            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>前台輪播編輯<span class="icon"></span>
+                            <span class="glyphicon glyphicon-book" aria-hidden="true"></span> 前台輪播編輯<span class="icon"></span>
                         </a>
-                    </li>
-                    <li>
-                        <a runat="server" href="~/BackEnd/BS_收費評估表.aspx">
-                            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 收費評估表<span class="icon"></span>
-                        </a>
-                    </li>
+                    </li>                    
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> 活動剪影<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -78,7 +78,12 @@
                             <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=5">義剪照片<span class="icon"></span></a></li>
                             <li class="dropdown-header divider"></li>
                         </ul>
-                    </li>                    
+                    </li>
+        	    <li>
+                        <a runat="server" href="~/BackEnd/BS_編輯影片.aspx">
+                            <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> 編輯影片<span class="icon"></span>
+                        </a>
+                    </li>                                
                      <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> 床位系統<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -87,17 +92,31 @@
                             <li><a id="A2" runat="server" href="~/BackEnd/BS_床位顯示_表格.aspx?">表格顯示<span class="icon"></span></a></li>
                             <li class="dropdown-header divider"></li>
                         </ul>
-                    </li>     
-                </ul>
-                <footer class="footer">
-                    <asp:Button ID="Button1" runat="server" Text="登出" OnClick="Button1_Click" OnClientClick="if (confirm('確定登出。')==false) {return false;}" />
-                    <div>
-                        <p class="text-muted">
-                            &copy; <%: DateTime.Now.Year %> - KSYY<br />
-                            <a runat="server" href="~/BackEnd/BS_Main.aspx">回首頁</a>
+                    </li>
+		    <li>
+                        <a id="A3" runat="server" href="~/BackEnd/BS_修改密碼.aspx">
+                            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span> 修改後台密碼<span class="icon"></span>
+                        </a>
+                    </li> 
+                    <li>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </li>
+                    <li>
+                        <p class="text-muted" style="text-align:center">
+                            &copy; <%: DateTime.Now.Year %> - KSYY
+                            <%--<a runat="server" href="/./FrontEnd/Main.aspx">回首頁</a>--%>
+                            <br />
+                            <asp:Button ID="ButtonBack" runat="server" CssClass="btn btn-success" Text="回首頁" OnClick="ButtonBack_Click"/>
+                            <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="登出" OnClick="Button1_Click" OnClientClick="if (confirm('確定登出。')==false) {return false;}" />
                         </p>
-                    </div>
-                </footer>
+                    </li>
+                </ul>
+                <%--<footer class="footer">
+                </footer> --%>       
             </nav>
 
             <div id="page-content-wrapper">

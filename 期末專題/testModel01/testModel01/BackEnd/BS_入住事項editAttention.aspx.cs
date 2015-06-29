@@ -28,13 +28,13 @@ namespace testModel01.BackEnd
         {
             if (e.CommandName == "Cancel")
             {
-                Response.Redirect("BS_入住事項.aspx");
+                Response.Redirect("/./BackEnd/BS_入住事項.aspx");
             }
         }
 
         protected void FormView1_ItemUpdated(object sender, FormViewUpdatedEventArgs e)
         {
-            Response.Redirect("BS_入住事項.aspx");
+            Response.Redirect("/./BackEnd/BS_入住事項.aspx");
         }
 
        
