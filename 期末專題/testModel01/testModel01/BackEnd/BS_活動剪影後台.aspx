@@ -114,12 +114,8 @@
                             Text='<%# Eval("f庭院照片_s")  %>'/>
                     </div>
                     <div  style="text-align:center"  >
-        <a href='<%# Eval("f庭院照片_s") %>'>
                         <img src='<%# Eval("f庭院照片_s") %>'  class="myimag_1"  />
-                    </a>
-
-
-                    </div>
+                               </div>
                 </div>
 
             </ItemTemplate>           
@@ -132,9 +128,8 @@
                     <asp:CheckBox ID="CheckBox2" runat="server" Text='<%# Eval("f內部照片_s")  %>' />
                 </div>
                 <div align="center">
-                    <a href='<%# Eval("f內部照片_s") %>'>
                         <img src='<%# Eval("f內部照片_s") %>' class="myimag_1"  />
-                    </a>
+            
                 </div>
             </div>
     </ItemTemplate>            
@@ -149,9 +144,8 @@
                     <asp:CheckBox ID="CheckBox2" runat="server" Text='<%# Eval("f慶生照片_s")  %>' />
                 </div>
                 <div align="center">
-                    <a href='<%# Eval("f慶生照片_s") %>'>
                         <img src='<%# Eval("f慶生照片_s") %>' class="myimag_1"  />
-                    </a>
+                   
                 </div>
             </div>
     </ItemTemplate>            
@@ -165,9 +159,8 @@
                     <asp:CheckBox ID="CheckBox2" runat="server" Text='<%# Eval("f泡腳照片_s")  %>' />
                 </div>
                 <div align="center">
-                    <a href='<%# Eval("f泡腳照片_s") %>'>
                         <img src='<%# Eval("f泡腳照片_s") %>' class="myimag_1"  />
-                    </a>
+               
                 </div>
             </div>
     </ItemTemplate>            
@@ -181,9 +174,8 @@
                     <asp:CheckBox ID="CheckBox2" runat="server" Text='<%# Eval("f內部照片_s")  %>' />
                 </div>
                 <div align="center">
-                    <a href='<%# Eval("f內部照片_s") %>'>
                         <img src='<%# Eval("f內部照片_s") %>' class="myimag_1"  />
-                    </a>
+             
                 </div>
             </div>
     </ItemTemplate>            
@@ -197,9 +189,8 @@
                     <asp:CheckBox ID="CheckBox2" runat="server" Text='<%# Eval("f復健照片_s")  %>' />
                 </div>
                 <div align="center">
-                    <a href='<%# Eval("f復健照片_s") %>'>
                         <img src='<%# Eval("f復健照片_s") %>' class="myimag_1"  />
-                    </a>
+                 
                 </div>
             </div>
     </ItemTemplate>            
@@ -213,9 +204,8 @@
                     <asp:CheckBox ID="CheckBox2" runat="server" Text='<%# Eval("f義剪照片_s")  %>' />
                 </div>
                 <div align="center">
-                    <a href='<%# Eval("f義剪照片_s") %>'>
                         <img src='<%# Eval("f義剪照片_s") %>' class="myimag_1"  />
-                    </a>
+          
                 </div>
             </div>
     </ItemTemplate>            
