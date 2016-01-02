@@ -39,7 +39,7 @@ namespace testModel01
                     if(countAD == 1)
                     {
                         strCarouselAD += "<div class='item active'>";
-                        strCarouselAD += "<img class='img-responsive' src='" + sdr輪播["fPic"].ToString() + "' alt='slider' style='width:1600px;height:300px' />";
+                        strCarouselAD += "<img class='img-responsive' src='" + sdr輪播["fPic"].ToString() + "' alt='slider' style='width:1920px;height:360px' />";
                         strCarouselAD += "<div class='slider-content'>";
                         strCarouselAD += "<div class='col-md-12 text-center'>";
                         strCarouselAD += "<h3 class='animated2 white'>";
@@ -52,7 +52,7 @@ namespace testModel01
                     if (countAD == 2)
                     {
                         strCarouselAD += "<div class='item'>";
-                        strCarouselAD += "<img class='img-responsive' src='" + sdr輪播["fPic"].ToString() + "' alt='slider' style='width:1600px;height:300px' />";
+                        strCarouselAD += "<img class='img-responsive' src='" + sdr輪播["fPic"].ToString() + "' alt='slider' style='width:1920px;height:360px' />";
                         strCarouselAD += "<div class='slider-content'>";
                         strCarouselAD += "<div class='col-md-12 text-center'>";
                         strCarouselAD += "<h3 class='animated4 white'>";
@@ -65,7 +65,7 @@ namespace testModel01
                     if (countAD == 3)
                     {
                         strCarouselAD += "<div class='item'>";
-                        strCarouselAD += "<img class='img-responsive' src='" + sdr輪播["fPic"].ToString() + "' alt='slider' style='width:1600px;height:300px' />";
+                        strCarouselAD += "<img class='img-responsive' src='" + sdr輪播["fPic"].ToString() + "' alt='slider' style='width:1920px;height:360px' />";
                         strCarouselAD += "<div class='slider-content'>";
                         strCarouselAD += "<div class='col-md-12 text-center'>";
                         strCarouselAD += "<h3 class='animated7 white'>";

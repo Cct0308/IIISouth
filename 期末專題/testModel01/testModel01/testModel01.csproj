@@ -488,6 +488,11 @@
     <Content Include="images\7.jpg" />
     <Content Include="images\8.jpg" />
     <Content Include="images\arrows.png" />
+    <Content Include="loginImg\1.jpg" />
+    <Content Include="loginImg\2.jpg" />
+    <Content Include="loginImg\3.jpg" />
+    <Content Include="loginImg\4.jpg" />
+    <Content Include="loginImg\5.jpg" />
     <Content Include="pic\床位照片\add_1.png" />
     <Content Include="pic\床位照片\add_2.png" />
     <Content Include="pic\床位照片\大頭照\defaultimg.png" />
@@ -526,7 +531,6 @@
     <Content Include="images\slider\bg1.jpg" />
     <Content Include="images\slider\bg2.jpg" />
     <Content Include="images\slider\bg3.jpg" />
-    <Content Include="loginImg\1.jpg" />
     <Content Include="pic\Cancel32x32.png" />
     <Content Include="pic\delete32x32.png" />
     <Content Include="BackEndImg\ks.png" />
@@ -587,10 +591,6 @@
     <Content Include="headImg\3.jpg" />
     <Content Include="Icon.png" />
     <Content Include="Login.aspx" />
-    <Content Include="loginImg\2.jpg" />
-    <Content Include="loginImg\3.jpg" />
-    <Content Include="loginImg\4.jpg" />
-    <Content Include="loginImg\5.jpg" />
     <Content Include="obj\Debug\testModel01.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\testModel01.dll" />
     <Content Include="obj\Debug\testModel01.pdb" />

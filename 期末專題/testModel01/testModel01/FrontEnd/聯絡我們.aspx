@@ -19,8 +19,8 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <style type="text/css">
         #user_gmap {
-            width: 1600px;
-            height: 400px;
+            width: 1920px;
+            height: 360px;
             margin: 0;
             border: 0;
         }

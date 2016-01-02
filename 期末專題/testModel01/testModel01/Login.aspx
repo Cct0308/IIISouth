@@ -13,17 +13,17 @@
 
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="Scripts/bootstrap.js"></script>
-    <%--<script src="Scripts/loginBackground.js"></script>--%>
+    <script src="Scripts/loginBackground.js"></script>
 
 </head>
 <body>
-    <%--<div id="wrap">
+    <div id="wrap">
         <img class="bgfade" src="loginImg/1.jpg" />
         <img class="bgfade" src="loginImg/2.jpg" />
         <img class="bgfade" src="loginImg/3.jpg" />
         <img class="bgfade" src="loginImg/4.jpg" />
         <img class="bgfade" src="loginImg/5.jpg" />
-    </div>--%>
+    </div>
     <div class="container">
         <form class="form-signin" role="form" runat="server">
             <h4 class="form-signin-heading">請輸入帳號及密碼登入</h4>
